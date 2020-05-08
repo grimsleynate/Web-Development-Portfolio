@@ -1,17 +1,36 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './IntroBackground.css';
-import anime from 'animejs/lib/anime.es.js';
+import anime from 'animejs';
 
-class Square extends React.Component {
-    render() {
-        return <div className={`square square${ this.props.number}`}></div>
-    }
+function Square(props) {
+    useEffect(() => {
+        anime ({
+            targets: `.square${props.numeber}`,
+            translateX: 250
+        })
+    });
+
+    return (
+        <div className={`square square${props.number}`}></div>
+    );
 }
 
 function IntroBackground() {
+
+    useEffect(() => {
+        var squares = document.querySelectorAll('.square');
+        anime ({
+            targets: squares,
+            rotate: 360,
+            duration: 2000,
+            loop: true,
+            easing: 'easeInOutSine'
+        })
+    });
+
     return (
         <div className="intro__background">
-            <Square number="1"></Square>
+            <Square number={1}></Square>
             <div className="square square2"></div>
             <div className="square square3"></div>
             <div className="square square4"></div>
