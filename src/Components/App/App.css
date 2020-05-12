@@ -1,3 +1,17 @@
 body {
-    background-image: linear-gradient(90deg,#00D3FF, #15EC8F);
+    background: #202030;
+}
+
+.notLargeScreen {
+    display: none !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .largeScreen {
+        display: none !important;
+    }
+
+    .notLargeScreen {
+        display: block !important;
+    }
 }

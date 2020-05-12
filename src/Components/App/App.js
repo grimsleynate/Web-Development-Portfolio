@@ -5,11 +5,16 @@ import './App.css';
 
 function App() {
   return (
-    <div>
-      <IntroBackground/>
-      <IntroCard>
+    <div className="app">
+      <div className="largeScreen">
+        <IntroBackground/>
+        <IntroCard>
       
-      </IntroCard>
+        </IntroCard>
+      </div>
+      <div className="notLargeScreen">
+        <h1 style={{color: 'white', textAlign: 'center'}}>Your screen is too small!</h1>
+      </div>
     </div>
   );
 }
