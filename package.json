@@ -19,6 +19,7 @@
     "react-scripts": "3.4.1",
     "set-value": "^3.0.2",
     "typeface-heebo": "0.0.72",
+    "typeface-raleway": "0.0.75",
     "typeface-roboto": "0.0.75",
     "yargs-parser": "^18.1.3"
   },

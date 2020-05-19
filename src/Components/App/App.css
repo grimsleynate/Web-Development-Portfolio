@@ -1,17 +1,11 @@
+:root {
+    --purple: #9B5DE5;
+    --pink: #F15BB5;
+    --yellow:  #FEE440;
+    --blue: #00BBF9;
+    --green: #00F5D4;
+}
+
 body {
     background: #202030;
-}
-
-.notLargeScreen {
-    display: none !important;
-}
-
-@media only screen and (max-width: 767px) {
-    .largeScreen {
-        display: none !important;
-    }
-
-    .notLargeScreen {
-        display: block !important;
-    }
 }

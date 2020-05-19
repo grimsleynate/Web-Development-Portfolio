@@ -1,21 +1,31 @@
 import React from 'react';
 import IntroCard from '../IntroCard/IntroCard.js';
 import IntroBackground from '../IntroBackground/IntroBackground.js';
+import SizeModal from '../SizeModal/SizeModal.js';
 import './App.css';
 
-function App() {
+const App = (props) => {
+
+  const body = (
+     <div className="app">
+        <div className="largeScreen">
+           <IntroCard></IntroCard>
+        </div>
+     </div>
+  );
+
+  if (window.innerWidth < 768) 
+  {
+    return (
+      <div>
+        <SizeModal></SizeModal>
+        <div>{body}</div>
+      </div>
+    )    
+  }
+
   return (
-    <div className="app">
-      <div className="largeScreen">
-        <IntroBackground/>
-        <IntroCard>
-      
-        </IntroCard>
-      </div>
-      <div className="notLargeScreen">
-        <h1 style={{color: 'white', textAlign: 'center'}}>Your screen is too small!</h1>
-      </div>
-    </div>
+    <div>{body}</div>
   );
 }
 

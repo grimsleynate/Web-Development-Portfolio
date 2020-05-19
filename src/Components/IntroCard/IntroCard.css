@@ -1,19 +1,205 @@
 .introCard {
-    width: 100%;
-    max-width: 1620px;
-    margin-top: 200px;
+    width: 90%;
+    max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
     color: white;
-    top: -700px;
-    position: relative;
-    display: none;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
 }
   
-.imgSelf {
+.introCard__img {
     height: 700px;
     max-width: 700px;
     margin-top: 30px;
     margin-left: 30px;
     margin-bottom: 30px;
+    min-width: 50%;
+    border-radius: 5px;
+}
+
+.MuiBox-root-32 {
+    max-width: 100%;
+    min-width: 50%;
+}
+
+.introCard__textContainer {
+    margin-left: 40px;
+}
+
+.introCard__textContainer h4{
+    font-weight: 400;
+    margin-top: 100px;
+}
+
+.introCard__textContainer h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 48px;
+    text-transform: uppercase;
+    position: relative;
+    font-weight: 600;
+}
+
+.introCard__textContainer .MuiTypography-caption {
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.introCard__textContainer .MuiTypography-body1:nth-child(4) {
+    color: #888;
+    font-weight: 300;
+    margin-top: 20px;
+    max-width: 75%;
+}
+
+.iconText {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.iconText .MuiTypography-body1 {
+    margin-left: 10px;
+}
+
+.iconTextList {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.iconTextList span {
+    color: var(--purple);
+}
+
+.iconTextList p {
+    color: #444;
+}
+
+.iconList ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.iconList ul li{
+    margin-right: 20px;
+}
+
+.MuiSvgIcon-root {
+    width: 40px;
+    height: 40px;
+}
+
+.iconList .iconList__row2 {
+    margin-left: 35px;
+}
+
+.MuiIconButton-root.facebook {
+    color: #3B5998;
+}
+
+.MuiIconButton-root.twitter {
+    color: #00acee;
+}
+
+.MuiIconButton-root.linkedin {
+    color: #0E76A8;
+}
+
+.MuiIconButton-root.bitbucket {
+    color: #205081;
+}
+
+.MuiIconButton-root.github {
+    color: #211F1F;
+}
+
+@media only screen and (max-width: 1200px) {
+    .iconTextList {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .introCard {
+        flex-direction: column;
+        max-width: 768px;
+    }
+
+    .introCard__textContainer h4 {
+        margin-top: 0px;
+    }
+
+    .contactInfo {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .iconTextList,
+    .iconList {
+        margin-left: 60px;
+        margin-right: 40px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .introCard__img {
+        height: 350px;
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .introCard__textContainer h4,
+    .introCard__textContainer h1,
+    .introCard__textContainer h3 {
+        text-align: center;
+    }
+
+    .introCard__textContainer h1 {
+        font-size: 32px;
+    }
+
+    .introCard {
+        max-width: 400px;
+    }
+
+    .introCard__textContainer {
+        margin-left: 0px;
+    }
+
+    .subParagraph {
+        display: none;
+    }
+
+    .contactInfo {
+        flex-direction: column;
+    }
+
+    .iconList {
+        display: flex;
+    }
+
+    .iconTextList,
+    .iconList {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .iconTextList {
+        position: relative;
+        left: 50%;
+        transform: translate(-25%, 0);
+    }
+    .iconList .iconList__row1 {
+        margin-left: 10px;
+    }
+ 
+    .iconList .iconList__row2 {
+        margin-left: 0;
+    }
 }
