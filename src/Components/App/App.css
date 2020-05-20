@@ -9,3 +9,13 @@
 body {
     background: #202030;
 }
+
+.aboutMe__container {
+    max-width: 50%;
+}
+
+.aboutMe__row1,
+.aboutMe__row2 {
+    display: flex;
+    flex-direction: row;
+}
