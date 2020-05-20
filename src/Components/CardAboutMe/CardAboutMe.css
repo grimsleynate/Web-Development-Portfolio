@@ -1,0 +1,27 @@
+.MuiCard-root.aboutMe__root {
+    margin-top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+}
+
+.MuiIcon-root.aboutMe__icon {
+    font-size: 3em;
+    width: 1.2em;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.MuiTypography-root.aboutMe__title {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.MuiTypography-root.aboutMe__body {
+    font-family: 14px;
+    color: #888;
+    text-align: center;
+}
