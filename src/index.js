@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './Components/App/App.js';
 import 'typeface-roboto';
-import 'typeface-heebo';
+import 'typeface-raleway';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(

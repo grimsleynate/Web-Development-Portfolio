@@ -1,0 +1,67 @@
+.MuiButtonBase-root.menuButton {
+    margin-left: auto;
+    display: none;
+}
+
+.MuiAppBar-colorPrimary.navbar {
+    background-color: var(--blue);
+}
+
+.navbar__link-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.navbar__link-list a {
+    text-decoration: none;
+    color: white;
+}
+
+.MuiTypography-h5 {
+    font-size: 1.75rem;
+}
+
+.MuiTypography-root.menuTitle {
+    margin-top: 15px;
+    margin-bottom: auto;
+}
+
+#menu {
+    top: 64px;
+    left: 0px;
+    border-radius: 0;
+    box-shadow: 0 0 0 black;
+    min-width: 100%;
+}
+
+#menu ul {
+    background-color: var(--blue);
+}
+
+#menu ul a {
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .MuiButtonBase-root.menuButton {
+        display: block;
+        margin-top: 5px;
+        margin-bottom: auto;
+    }
+
+    .navbar__link-list {
+        display: none;
+    }
+
+    .navbar__link-list.show {
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+        margin-left: -240px;
+        margin-right: auto;
+    }
+}

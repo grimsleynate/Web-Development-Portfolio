@@ -1,8 +1,6 @@
 import React from 'react';
 import {Card, CardMedia, Box, Typography, Icon, IconButton} from '@material-ui/core/';
 import {Facebook, Twitter, LinkedIn, GitHub} from '@material-ui/icons/';
-import 'typeface-roboto';
-import 'typeface-raleway';
 import './IntroCard.css';
 
 const IconText = (props) => {
