@@ -3,6 +3,11 @@ import {Card, CardMedia, Box, Typography, Icon, IconButton} from '@material-ui/c
 import {Facebook, Twitter, LinkedIn, GitHub} from '@material-ui/icons/';
 import './IntroCard.css';
 
+//a component that holds an icon and some text in a row
+/*
+PROPS LIST:
+    icon: the Material icon to be rendered
+*/
 const IconText = (props) => {
     return (
         <div className="iconText">
@@ -12,6 +17,7 @@ const IconText = (props) => {
     );
 }
 
+//a component holding a list of IconText components
 const IconTextList = (props) => {
     return (
         <div className="iconTextList">
@@ -22,6 +28,11 @@ const IconTextList = (props) => {
     )
 }
 
+//a component holding a list of five social media icons
+/*
+PROPS LIST:
+    none
+*/
 const IconList = (props) => {
     return (
         <div className="iconList">
@@ -48,6 +59,11 @@ const IconList = (props) => {
     );
 }
 
+//A component holding a picture and descriptive text relating to a person's portfolio
+/*
+PROPS LIST:
+    none
+*/
 const IntroCard = (props) => {
     return (
         <Card className="introCard">
