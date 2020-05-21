@@ -1,0 +1,181 @@
+.expCard__content-container,
+.eduCard__content-container {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.MuiButtonGroup-root.expCard__buttonGroup,
+.MuiButtonGroup-root.eduCard__buttonGroup {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 120px;
+    position: absolute;
+}
+
+li.expCard__listItem,
+li.eduCard__listItem {
+    list-style-type: none;
+    margin-top: 40px;
+}
+
+ul.expCard__list-container,
+ul.eduCard__list-container {
+    margin-top: 260px;
+    margin-left: 125px;
+    margin-bottom: 60px;
+    left: 50%;
+    position: relative;
+    transform: translate(-25%, 0);
+    border-left: 5px solid rgba(0, 0, 0, 0.1);
+    color:  white;
+    padding-bottom: 40px;
+}
+
+h4.expCard__listItem-title,
+h4.eduCard__listItem-title {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+p.expCard__listItem-date,
+p.eduCard__listItem-date {
+    position: relative;
+    right: 250px;
+    font-weight: 300;
+}
+
+p.expCard__listItem-jobTitle,
+p.expCard__listItem-location,
+p.eduCard__listItem-jobTitle,
+p.eduCard__listItem-location {
+    position: relative;
+    font-weight: 300;
+}
+
+.expCard__listItem .span1 {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    display: block;
+    background: rgba(255, 255, 255, 0.4);
+    position: relative;
+    left: -50px;
+    top: 65px;
+}
+
+.eduCard__listItem .span1 {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    display: block;
+    background: rgba(255, 255, 255, 0.4);
+    position: relative;
+    left: -50px;
+    top: 100px;
+}
+
+.expCard__listItem .span2 {
+    position: relative;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    display: block;
+    background: rgba(255, 255, 255, 0.8);
+    left: -46px;
+    top: 53px;
+}
+
+.eduCard__listItem .span2 {
+    position: relative;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    display: block;
+    background: rgba(255, 255, 255, 0.8);
+    left: -46px;
+    top: 88px;
+}
+
+.expCard__root {
+    background: linear-gradient(0.25turn, var(--pink), var(--blue));
+    min-height: 1000px;
+}
+
+.eduCard__root {
+    background: linear-gradient(0.25turn, var(--blue), var(--pink));
+    min-height: 1000px;
+}
+
+.MuiButton-root.expCard__expButton,
+.MuiButton-root.expCard__eduButton {
+    background: rgba(0, 0, 0, 0);
+}
+
+.MuiButton-root.expCard__expButton:hover,
+.MuiButton-root.expCard__eduButton:hover {
+    background: var(--purple);
+}
+
+@media only screen and (max-width: 768px) {
+    ul.expCard__list-container, 
+    ul.eduCard__list-container {
+        left: 180px;
+        margin-top: 165px;
+    }
+
+    .MuiButtonGroup-root.expCard__buttonGroup, 
+    .MuiButtonGroup-root.eduCard__buttonGroup {
+        left: 215px;
+        margin-top: 50px;
+    }
+
+    .eduCard__root,
+    .expCard__root {
+        min-height: 890px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .MuiButtonGroup-root.expCard__buttonGroup, 
+    .MuiButtonGroup-root.eduCard__buttonGroup {
+        left: 170px;
+    }
+
+    .MuiButtonGroup-root.expCard__buttonGroup .MuiButton-containedSizeLarge, 
+    .MuiButtonGroup-root.eduCard__buttonGroup .MuiButton-containedSizeLarge {
+        font-size: 0.75rem;
+    }
+
+    .MuiTypography-root.expCard__listItem-title.MuiTypography-body1,
+    .MuiTypography-root.eduCard__listItem-title.MuiTypography-body1 {
+        font-size: 1rem;
+    }
+    .MuiTypography-root.expCard__listItem-date.MuiTypography-body1,
+    .MuiTypography-root.eduCard__listItem-date.MuiTypography-body1,
+    .MuiTypography-root.expCard__listItem-jobTitle.MuiTypography-body1,
+    .MuiTypography-root.eduCard__listItem-jobTitle.MuiTypography-body1,
+    .MuiTypography-root.expCard__listItem-location.MuiTypography-body1,
+    .MuiTypography-root.eduCard__listItem-location.MuiTypography-body1 {
+        font-size: 0.75rem;
+    }
+
+    p.expCard__listItem-date, 
+    p.eduCard__listItem-date {
+        right: 200px;
+    }
+
+    h4.expCard__listItem-title, 
+    h4.eduCard__listItem-title {
+        font-size: 1.25rem;
+    }
+
+    ul.expCard__list-container, 
+    ul.eduCard__list-container {
+        left: 25%;
+    }
+}
