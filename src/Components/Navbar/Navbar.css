@@ -4,7 +4,7 @@
 }
 
 .MuiAppBar-colorPrimary.navbar {
-    background-color: var(--blue);
+    background-image: linear-gradient(0.375turn, var(--blue), var(--purple));
 }
 
 .navbar__link-list {
