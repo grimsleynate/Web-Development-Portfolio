@@ -7,7 +7,7 @@
 }
 
 body {
-    background: #202030;
+    background-color: #EEE;
 }
 
 .aboutMe__container {
@@ -18,4 +18,19 @@ body {
 .aboutMe__row2 {
     display: flex;
     flex-direction: row;
+}
+
+.app__introBackground2 {
+    height: 70vh;
+}
+
+.introCard {
+    position: relative;
+    top: -53vh;
+}
+
+@media only screen and (max-width: 768px) {
+    .introCard {
+        top: -60vh;
+    }
 }

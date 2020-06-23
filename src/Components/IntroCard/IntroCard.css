@@ -15,7 +15,7 @@
     margin-top: 30px;
     margin-left: 30px;
     margin-bottom: 30px;
-    min-width: 50%;
+    min-width: 42rem;
     border-radius: 5px;
 }
 
@@ -150,6 +150,7 @@
     .introCard__img {
         height: 350px;
         max-width: 350px;
+        min-width: 0rem;
         margin-left: auto;
         margin-right: auto;
     }

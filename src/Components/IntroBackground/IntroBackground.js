@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import './IntroBackground.css';
 import anime from 'animejs';
-import { render } from '@testing-library/react';
 
 //This is a component called Dot.  It creates a div with four props: number (unique dot number), col (column number), x (left margin value), and y (top margin value).
 let Dot = (props) => <div className={`dot dot${props.number} col${props.col}`} style={{marginLeft: props.x, marginTop: props.y}}></div>
@@ -63,12 +62,12 @@ class IntroBackground extends React.Component {
             anime ({
                 //we target the dots we created
                 targets: dots,
-                scale: [
-                    {value: .1, easing: 'easeOutSine', duration: 500},
-                    {value: 1, easing: 'easeInOutQuad', duration: 500}
+                translateX: [
+                    {value: -25, easing: 'easeOutSine', duration: 500},
+                    {value: 25, easing: 'easeInOutQuad', duration: 500}
                 ],
-                opacity: [0, 1],
-                delay: anime.stagger(50, {grid: [20, 15], from: 'center'})
+                delay: anime.stagger(50, {grid: [20, 15], from: 'center'}),
+                loop: true
             });
         }
         else 
@@ -76,11 +75,11 @@ class IntroBackground extends React.Component {
             anime ({
                 //we target the dots we created
                 targets: dots,
-                scale: [
-                    {value: .1, easing: 'easeOutSine', duration: 500},
-                    {value: 1, easing: 'easeInOutQuad', duration: 500}
-                ],
-                delay: anime.stagger(50, {grid: [37, 15], from: 'first'})
+                translateX: {value: -25, easing: 'easeInOutSine', duration: 100},
+                translateY: {value: -25, easing:'easeInOutSine', duration: 100},
+                delay: anime.stagger(10, {grid: [37, 15], from: 0, axis: 'x'}),
+                loop: true,
+                direction: 'alternate',
             }); 
         }
     }
