@@ -1,7 +1,6 @@
 .skillbar__root {
-    top: 250px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    color: white;
+    margin-top: 20px;
 }

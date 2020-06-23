@@ -25,12 +25,68 @@ body {
 }
 
 .introCard {
+    margin-top: -60vh;
     position: relative;
-    top: -53vh;
 }
 
-@media only screen and (max-width: 768px) {
+.app__aboutMe {
+    margin-top: 100px;
+}
+
+.MuiTypography-root.app__aboutMe-title {
+    font-size: 42px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    margin-left: 21vw;
+}
+
+.app__aboutMe-cardContainer {
+    display: inline-flex;
+    width: 50%;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+
+.app__aboutMe-skillbarContainer {
+    width: 50%;
+    position: absolute;
+    margin-top: -480px;
+    margin-left: 60%;
+}
+
+@media only screen and (max-width: 1799px) {
+    .app__aboutMe-skillbarContainer {
+        margin-top: -975px;
+    }
+}
+
+@media only screen and (max-width: 1599px) {
+    .app__aboutMe-skillbarContainer {
+        margin-left: 50%;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .app__aboutMe-cardContainer {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .app__aboutMe-skillbarContainer {
+        margin-left: 25%;
+        margin-top: 20px;
+    }
+
+    .MuiTypography-root.app__aboutMe-title {
+        margin-left: 0;
+        text-align: center;
+    }
+
     .introCard {
-        top: -60vh;
+        max-width: 1000px;
+    }
+
+    .introCard__img {
+        max-width: 93%;
     }
 }

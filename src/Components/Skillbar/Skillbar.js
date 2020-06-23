@@ -3,6 +3,13 @@ import {Typography, LinearProgress} from '@material-ui/core/';
 import './Skillbar.css';
 import {lighten, makeStyles, withStyles } from '@material-ui/core/styles';
 
+/*
+PROPS: 
+    color: The color of the skillbar background.  Options: 'pink', 'purple', 'blue', 'green', 'yellow'
+    skillName:  The name of the skill
+    skillValue:  A number that represents how much is known in that particular skill (out of 100)
+*/
+
 const Skillbar = (props) => {
 
     var color = '#FFF';
@@ -32,7 +39,7 @@ const Skillbar = (props) => {
             backgroundColor: lighten(color, 0.5),
             borderRadius: '10px',
             height: '10px',
-            maxWidth: '450px'
+            maxWidth: '600px'
         },
         bar: {
             backgroundColor: `var(--${props.color})`,
