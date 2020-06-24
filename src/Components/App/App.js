@@ -4,6 +4,7 @@ import IntroBackground2 from '../IntroBackground/IntroBackground2.js';
 import IntroCard from '../IntroCard/IntroCard.js';
 import CardAboutMe from '../CardAboutMe/CardAboutMe.js';
 import Skillbar from '../Skillbar/Skillbar.js';
+import CardExperience from '../CardExperience/CardExperience.js';
 import {Typography,} from '@material-ui/core';
 import './App.css';
 
@@ -54,7 +55,7 @@ const App = (props) => {
                 </div>
                 {/*These are the skill bars on the right side, showcasing hard skills*/}
                 <div className="app__aboutMe-skillbarContainer">
-                    <Skillbar color="purple"
+                    <Skillbar color="pink"
                               skillName="CSS3"
                               skillValue="90"
                               />
@@ -62,23 +63,23 @@ const App = (props) => {
                               skillName="Javascript"
                               skillValue="75"
                               />
-                    <Skillbar color="yellow"
+                    <Skillbar color="pink"
                               skillName="C#"
                               skillValue="85"
                               />
-                    <Skillbar color="green"
+                    <Skillbar color="pink"
                               skillName="C++"
                               skillValue="70"
                               />
-                    <Skillbar color="blue"
+                    <Skillbar color="pink"
                               skillName="Python"
                               skillValue="85"
                               />
-                    <Skillbar color="green"
+                    <Skillbar color="pink"
                               skillName="Java"
                               skillValue="65"
                               />
-                    <Skillbar color="yellow"
+                    <Skillbar color="pink"
                               skillName="PHP"
                               skillValue="70"
                               />
@@ -86,10 +87,20 @@ const App = (props) => {
                               skillName="React"
                               skillValue="90"
                               />
-                    <Skillbar color="purple"
+                    <Skillbar color="pink"
                               skillName="Ruby"
                               skillValue="15"
                               />
+                </div>
+                {/*This component consists of the My Experiences card and the My Education card*/}
+                <CardExperience/>
+                {/*This container holds the cards that showcase what I offer*/}
+                <div className="app__offer-container">
+                    <Typography component="h2" 
+                                variant="title"
+                                className="app__offer-title">
+                                    What I offer
+                    </Typography>
                 </div>
             </div>
         </div>

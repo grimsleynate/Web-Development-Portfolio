@@ -54,6 +54,18 @@ body {
     margin-left: 60%;
 }
 
+.cardExperience__root {
+    margin-top: 60px;
+}
+
+.MuiTypography-root.app__offer-title {
+    font-size: 42px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+
 @media only screen and (max-width: 1799px) {
     .app__aboutMe-skillbarContainer {
         margin-top: -975px;

@@ -102,12 +102,12 @@ p.eduCard__listItem-location {
 }
 
 .expCard__root {
-    background: linear-gradient(0.25turn, var(--pink), var(--blue));
+    background: linear-gradient(0.25turn, var(--purple), var(--blue));
     min-height: 1000px;
 }
 
 .eduCard__root {
-    background: linear-gradient(0.25turn, var(--blue), var(--pink));
+    background: linear-gradient(0.25turn, var(--blue), var(--purple));
     min-height: 1000px;
 }
 
