@@ -1,13 +1,13 @@
 import React from 'react';
 import Navbar from '../Navbar/Navbar.js';
 import IntroBackground2 from '../IntroBackground/IntroBackground2.js';
-import IntroCard from '../IntroCard/IntroCard.js';
+import {IntroCard, IconText} from '../IntroCard/IntroCard.js';
 import CardAboutMe from '../CardAboutMe/CardAboutMe.js';
 import Skillbar from '../Skillbar/Skillbar.js';
 import CardExperience from '../CardExperience/CardExperience.js';
 import CardOffer from '../CardOffer/CardOffer.js';
 import CardDemo from '../CardDemo/CardDemo.js';
-import {Typography,} from '@material-ui/core';
+import {Typography, Button, TextField, FormControl, Input} from '@material-ui/core';
 import './App.css';
 
 //This component is the container for the rest of the app
@@ -180,6 +180,102 @@ const App = (props) => {
                     />
                 </div>
             </div>
+            {/*This is my contact form*/}
+            <div className="app__contact-container">
+                {/*This is the title and the subtitle for the contact form*/}
+                <Typography variant="title" 
+                            component="h3"
+                            className="app__contact-title">
+                                Contact Me
+                </Typography>
+                <Typography variant="subtitle" 
+                            component="h4"
+                            className="app__contact-subtitle">
+                                If you have an questions, comments, or offers I would love to hear it!
+                </Typography>
+                {/*This holds all of the contact area, except for the title and subtitle */}
+                <div className="app__contact-masterContainer">
+                    {/*This container holds all of the icon/text combos*/}
+                    <div className="app__contact-iconTextContainer">
+                        <IconText icon="room"
+                                  text="Lansing, Michigan"
+                        />
+                        <Typography component="p"
+                                    variant="subtitle"
+                                    className="app__contact-iconTextSubtitle">
+                                        48906
+                        </Typography>
+                        <IconText icon="phone"
+                                  text="(989)217-6087"
+                        />
+                        <Typography component="p"
+                                    variant="subtitle"
+                                    className="app__contact-iconTextSubtitle">
+                                        Mon thru Fri, 8:00 AM - 6:00 PM
+                        </Typography>
+                        <IconText icon="email"
+                                  text="grimsleynate@gmail.com"
+                        />
+                        <Typography component="p"
+                                    variant="subtitle"
+                                    className="app__contact-iconTextSubtitle">
+                                        Send me your questions any time!
+                        </Typography>
+                    </div>
+                    {/*This container holds our actual form*/}
+                    <div className="app__contact-formContainer">
+                        {/*I'm using formspree to handle my form instead of building out a form handler myself*/}
+                        <form action="https://formspree.io/mdowlnja" method="POST">
+                            {/*I divied my form up into seperate containers so that I can easily use flexbox to
+                                move and position the different elements*/}
+                            <div className="app__contact-formControl">
+                                {/*This container holds the name, email, and subject inputs*/}
+                                <div className="app__contact-formControl1">
+                                    <TextField placeholder="Jane Doe" 
+                                        name="Name"
+                                        label="Name"
+                                        inputProps={{ 'aria-label': 'description' }} 
+                                        variant="outlined"
+                                        className="app__contact-input"
+                                    />
+                                    <TextField placeholder="janedoe@example.com" 
+                                        name="Email"
+                                        label="Email"
+                                        inputProps={{ 'aria-label': 'description' }}
+                                        variant="outlined"
+                                        className="app__contact-input"  
+                                    />
+                                    <TextField placeholder="Requesting A Quote" 
+                                        name="Subject"
+                                        label="Subject"
+                                        inputProps={{ 'aria-label': 'description' }}  
+                                        variant="outlined"
+                                        className="app__contact-input"
+                                    />
+                                </div>
+                                {/*This container stores the Message input and the submit button*/}
+                                <div className="app__contact-formControl2">
+                                    <TextField placeholder="Message Text" 
+                                               name="Message"
+                                               label="Message"
+                                               inputProps={{ 'aria-label': 'description' }}
+                                               multiline
+                                               rows={7}
+                                               variant="outlined"
+                                               className="app__contact-input"  
+                                    />
+                                    <Button type="submit"
+                                            variant="contained"
+                                            className="app__contact-button">
+                                                Send Message
+                                    </Button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            {/*This starts our footer section*/}
         </div>
     );
 }

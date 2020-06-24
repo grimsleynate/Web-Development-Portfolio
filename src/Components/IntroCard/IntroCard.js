@@ -7,8 +7,9 @@ import './IntroCard.css';
 /*
 PROPS LIST:
     icon: the Material icon to be rendered
+    text: the text to be rendered next to the icon
 */
-const IconText = (props) => {
+export const IconText = (props) => {
     return (
         <div className="iconText">
             <Icon>{props.icon}</Icon>
@@ -64,7 +65,7 @@ const IconList = (props) => {
 PROPS LIST:
     none
 */
-const IntroCard = (props) => {
+export const IntroCard = (props) => {
     return (
         <Card className="introCard">
             <Box>
@@ -84,5 +85,3 @@ const IntroCard = (props) => {
         </Card>
     );
 }
-
-export default IntroCard;

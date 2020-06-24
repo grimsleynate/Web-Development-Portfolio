@@ -21,7 +21,7 @@ body {
 }
 
 .app__introBackground2 {
-    height: 70vh;
+    height: 80vh;
 }
 
 .introCard {
@@ -56,18 +56,30 @@ body {
 }
 
 .cardExperience__root,
-.app__offer-container,
+.app__offer-container {
+    margin-top: 120px;
+}
+
+
 .app__latestProjects-container {
-    margin-top: 80px;
+    margin-top: 120px;
 }
 
 .MuiTypography-root.app__offer-title,
-.MuiTypography-root.app__latestProjects-title {
+.MuiTypography-root.app__latestProjects-title,
+.MuiTypography-root.app__contact-title {
     font-size: 42px;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     text-align: center;
     text-transform: uppercase;
+}
+
+.MuiTypography-root.app__contact-subtitle {
+    font-size: 21px;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 10px;
 }
 
 .app__offer-cardContainer {
@@ -81,6 +93,80 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 20px;
+}
+
+.app__contact-container {
+    margin-top: 120px;
+}
+
+.app__contact-container .MuiButton-root {
+    background-color: var(--purple);
+    color: white;
+}
+
+.app__contact-container .MuiButton-root:hover,
+.app__contact-container .MuiButton-root:focus {
+    background-color: var(--blue);
+}
+
+.app__contact-masterContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.app__contact-iconTextContainer {
+    flex-grow: 1;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.app__contact-formContainer {
+    flex-grow: 4;
+}
+
+.app__contact-container .iconText span {
+    color: var(--purple);
+}
+
+.app__contact-iconTextSubtitle {
+    color: #888;
+    font-weight: 300;
+    top: -15px;
+    left: 40px;
+    position: relative;
+}
+
+.app__contact-formControl {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.app__contact-formControl1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 450px;
+}
+
+.app__contact-formControl2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-grow: 2;
+    margin-left: 20px;
+    max-width: 500px;
+}
+
+.app__contact-button {
+    max-width: 150px;
+}
+
+.app__contact-input {
+    margin-bottom: 10px !important;
 }
 
 @media only screen and (max-width: 1799px) {
