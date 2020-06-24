@@ -6,6 +6,7 @@ import CardAboutMe from '../CardAboutMe/CardAboutMe.js';
 import Skillbar from '../Skillbar/Skillbar.js';
 import CardExperience from '../CardExperience/CardExperience.js';
 import CardOffer from '../CardOffer/CardOffer.js';
+import CardDemo from '../CardDemo/CardDemo.js';
 import {Typography,} from '@material-ui/core';
 import './App.css';
 
@@ -93,38 +94,90 @@ const App = (props) => {
                               skillValue="15"
                               />
                 </div>
-                {/*This component consists of the My Experiences card and the My Education card*/}
-                <CardExperience/>
-                {/*This container holds the cards that showcase what I offer*/}
-                <div className="app__offer-container">
-                    <Typography component="h2" 
-                                variant="title"
-                                className="app__offer-title">
-                                    What I offer
-                    </Typography>
-                    <div className="app__offer-cardContainer">
-                        <CardOffer color1="green"
-                                   color2="blue"
-                                   icon="fa fa-wifi"
-                                   title="Web Development"
-                                   body="If you are looking at blank cassettes on the web, you may be very confused
-                                         at the difference in price.  You may see some for as low as $17 each."
-                        />
-                        <CardOffer color1="pink"
-                                   color2="purple"
-                                   icon="fa fa-gamepad"
-                                   title="Video Game Programming"
-                                   body="If you are looking at blank cassettes on the web, you may be very confused
-                                         at the difference in price.  You may see some for as low as $17 each."
-                        />
-                        <CardOffer color1="yellow"
-                                   color2="green"
-                                   icon="fa fa-code"
-                                   title="Software Engineering"
-                                   body="If you are looking at blank cassettes on the web, you may be very confused
-                                         at the difference in price.  You may see some for as low as $17 each."
-                        />
-                    </div>
+            </div>
+            {/*This component consists of the My Experiences card and the My Education card*/}
+            <CardExperience/>
+            {/*This container holds the cards that showcase what I offer*/}
+            <div className="app__offer-container">
+                <Typography component="h2" 
+                            variant="title"
+                            className="app__offer-title">
+                                What I offer
+                </Typography>
+                <div className="app__offer-cardContainer">
+                    <CardOffer color1="green"
+                                color2="blue"
+                                icon="fa fa-wifi"
+                                title="Web Development"
+                                body="If you are looking at blank cassettes on the web, you may be very confused
+                                        at the difference in price.  You may see some for as low as $17 each."
+                    />
+                    <CardOffer color1="pink"
+                                color2="purple"
+                                icon="fa fa-gamepad"
+                                title="Video Game Programming"
+                                body="If you are looking at blank cassettes on the web, you may be very confused
+                                        at the difference in price.  You may see some for as low as $17 each."
+                    />
+                    <CardOffer color1="yellow"
+                                color2="green"
+                                icon="fa fa-code"
+                                title="Software Engineering"
+                                body="If you are looking at blank cassettes on the web, you may be very confused
+                                        at the difference in price.  You may see some for as low as $17 each."
+                    />
+                </div>
+            </div>
+            {/*This is my latest projects section*/}
+            <div className="app__latestProjects-container">
+                <Typography component="h2" 
+                            variant="title"
+                            className="app__latestProjects-title">
+                                My Latest Projects
+                </Typography>
+                <div className="app__latestProjects-cardContainer">
+                    <CardDemo image="./img/gallery/HappyTalesGallery.png"
+                              imageTitle="Happy Tales Landing Page"
+                              gradientColor1="purple"
+                              gradientColor2="pink"
+                              client="Happy Tales Pet Care"
+                              subtitle="Local business"
+                              description="Local Business"
+                              url="www.happytalespetcare.com"
+                              modalImages={[{image : "./img/gallery/HappyTalesDesign.png", title : "Image 1"}, 
+                                            {image : "/img/gallery/HappyTalesModal3.png", title : "Image 2"}]}
+                              aboutProject="This was a fun project"
+                              technologies={["Javascript", "HTML", "CSS3", "React", "Bootstrap"]}
+                              githubLink="https://github.com/grimsleynate/grimsleynate.github.io"
+                    />
+                    <CardDemo image="./img/gallery/HappyTalesGallery.png"
+                              imageTitle="Happy Tales Landing Page"
+                              gradientColor1="purple"
+                              gradientColor2="pink"
+                              client="Happy Tales Pet Care"
+                              subtitle="Local business"
+                              description="Local Business"
+                              url="www.happytalespetcare.com"
+                              modalImages={[{image : "./img/gallery/HappyTalesDesign.png", title : "Image 1"}, 
+                                            {image : "/img/gallery/HappyTalesModal3.png", title : "Image 2"}]}
+                              aboutProject="This was a fun project"
+                              technologies={["Javascript", "HTML", "CSS3", "React", "Bootstrap"]}
+                              githubLink="https://github.com/grimsleynate/grimsleynate.github.io"
+                    />
+                    <CardDemo image="./img/gallery/HappyTalesGallery.png"
+                              imageTitle="Happy Tales Landing Page"
+                              gradientColor1="purple"
+                              gradientColor2="pink"
+                              client="Happy Tales Pet Care"
+                              subtitle="Local business"
+                              description="Local Business"
+                              url="www.happytalespetcare.com"
+                              modalImages={[{image : "./img/gallery/HappyTalesDesign.png", title : "Image 1"}, 
+                                            {image : "/img/gallery/HappyTalesModal3.png", title : "Image 2"}]}
+                              aboutProject="This was a fun project"
+                              technologies={["Javascript", "HTML", "CSS3", "React", "Bootstrap"]}
+                              githubLink="https://github.com/grimsleynate/grimsleynate.github.io"
+                    />
                 </div>
             </div>
         </div>

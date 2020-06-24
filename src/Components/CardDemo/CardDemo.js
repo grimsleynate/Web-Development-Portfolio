@@ -97,7 +97,7 @@ const CardDemo = (props) => {
         //This class targets the AppBar inside the Dialog
         appBar: {
             backgroundImage: `linear-gradient(0.25turn, ${gradientColor1}, ${gradientColor2})`,
-            position: 'static',
+            position: 'fixed',
         },
         //This class targets the text in the AppBar, inside the Dialog component
         modalTitle: {

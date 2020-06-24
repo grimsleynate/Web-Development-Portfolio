@@ -2,6 +2,8 @@
     width: 600px;
     height: 400px;
     text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .cardDemo__root .image {
@@ -18,6 +20,8 @@
     font-weight: 700;
     font-size: 1.5rem;
     margin-top: 10px;
+    position: relative;
+    top: -300px;
 }
 
 .cardDemo__root h4 {
@@ -25,13 +29,15 @@
     font-weight: 300;
     font-size: 1.25rem;
     margin-bottom: 10px;
+    position: relative;
+    top: -300px;
 }
 
 .cardDemo__cardMedia-container .overlay { 
     width: 600px; 
     height: 300px;
-    position: absolute;
-    top: 68px;
+    position: relative;
+    top: -300px;
     opacity: 0;
     transition: all 0.5s ease-in-out;
 }
