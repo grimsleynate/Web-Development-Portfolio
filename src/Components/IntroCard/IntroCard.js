@@ -34,7 +34,7 @@ const IconTextList = (props) => {
 PROPS LIST:
     none
 */
-const IconList = (props) => {
+export const IconList = (props) => {
     return (
         <div className="iconList">
             <ul className="iconList__row1">

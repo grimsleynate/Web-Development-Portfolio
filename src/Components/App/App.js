@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../Navbar/Navbar.js';
 import IntroBackground2 from '../IntroBackground/IntroBackground2.js';
-import {IntroCard, IconText} from '../IntroCard/IntroCard.js';
+import {IntroCard, IconText, IconList} from '../IntroCard/IntroCard.js';
 import CardAboutMe from '../CardAboutMe/CardAboutMe.js';
 import Skillbar from '../Skillbar/Skillbar.js';
 import CardExperience from '../CardExperience/CardExperience.js';
@@ -276,6 +276,49 @@ const App = (props) => {
                 </div>
             </div>
             {/*This starts our footer section*/}
+            <div className="app__footer-container">
+                {/*This container holds the contact portion of the footer*/}
+                <div className="app__footer-contact">
+                    <Typography className="app__footer-contactTitle"
+                                component="h4"
+                                variant="title">
+                                    Contact
+                    </Typography>
+                    <Typography className="app__footer-contactSubtitle"
+                                component="h4"
+                                variant="subtitle">
+                                    Like what you see? You can contact me through email
+                                    at grimsleynate@gmail.com or through phone at 
+                                    1(989)217-6087
+                    </Typography>
+                </div>
+                {/*This container holds the social media portion of the footer */}
+                <div className="app__footer-social">
+                    <Typography className="app__footer-socialTitle"
+                                component="h4"
+                                variant="title">
+                                    Follow Me
+                    </Typography>
+                    <Typography className="app__footer-socialSubtitle"
+                                component="h4"
+                                variant="subtitle">
+                                    Let's be social!
+                    </Typography>
+                    <div className="app__contact-socialMediaButtons">
+                        <IconList />
+                    </div>
+                </div>
+                {/*This container holds the copyright portion of the footer*/}
+                <div className="app__footer-copyright">
+                    <div className="copyright-container">
+                    <Typography className="app__footer-copyrightText"
+                                component="p"
+                                variant="body">
+                                    Copyright © 2020 All rights reserved | <a href="www.github.com/grimsleynate">Nathaniel Grimsley</a>
+                    </Typography>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }
