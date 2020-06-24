@@ -118,7 +118,7 @@ p.eduCard__listItem-location {
 
 .MuiButton-root.expCard__expButton:hover,
 .MuiButton-root.expCard__eduButton:hover {
-    background: var(--purple);
+    background: var(--green);
 }
 
 @media only screen and (max-width: 768px) {

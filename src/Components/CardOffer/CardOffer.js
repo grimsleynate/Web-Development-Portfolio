@@ -90,7 +90,7 @@ const CardOffer = (props) => {
     return (
         <Card className="cardOffer__root" component="button" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <CardContent className="cardOffer__cardContent">
-                <Icon className={`cardOffer__icon ${classes.icon}`} component="i">{props.icon}</Icon>
+                <Icon className={`cardOffer__icon ${classes.icon} ${props.icon}`} component="i">{props.icon}</Icon>
                 <Typography component="h2">{props.title}</Typography>
                 <Typography component="p">{props.body}</Typography>
             </CardContent>

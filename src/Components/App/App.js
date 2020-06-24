@@ -5,6 +5,7 @@ import IntroCard from '../IntroCard/IntroCard.js';
 import CardAboutMe from '../CardAboutMe/CardAboutMe.js';
 import Skillbar from '../Skillbar/Skillbar.js';
 import CardExperience from '../CardExperience/CardExperience.js';
+import CardOffer from '../CardOffer/CardOffer.js';
 import {Typography,} from '@material-ui/core';
 import './App.css';
 
@@ -101,6 +102,29 @@ const App = (props) => {
                                 className="app__offer-title">
                                     What I offer
                     </Typography>
+                    <div className="app__offer-cardContainer">
+                        <CardOffer color1="green"
+                                   color2="blue"
+                                   icon="fa fa-wifi"
+                                   title="Web Development"
+                                   body="If you are looking at blank cassettes on the web, you may be very confused
+                                         at the difference in price.  You may see some for as low as $17 each."
+                        />
+                        <CardOffer color1="pink"
+                                   color2="purple"
+                                   icon="fa fa-gamepad"
+                                   title="Video Game Programming"
+                                   body="If you are looking at blank cassettes on the web, you may be very confused
+                                         at the difference in price.  You may see some for as low as $17 each."
+                        />
+                        <CardOffer color1="yellow"
+                                   color2="green"
+                                   icon="fa fa-code"
+                                   title="Software Engineering"
+                                   body="If you are looking at blank cassettes on the web, you may be very confused
+                                         at the difference in price.  You may see some for as low as $17 each."
+                        />
+                    </div>
                 </div>
             </div>
         </div>

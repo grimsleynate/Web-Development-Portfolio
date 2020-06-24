@@ -55,7 +55,11 @@ body {
 }
 
 .cardExperience__root {
-    margin-top: 60px;
+    margin-top: 80px;
+}
+
+.app__offer-container {
+    margin-top: 80px;
 }
 
 .MuiTypography-root.app__offer-title {
@@ -65,6 +69,12 @@ body {
     text-align: center;
 }
 
+.app__offer-cardContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 @media only screen and (max-width: 1799px) {
     .app__aboutMe-skillbarContainer {
