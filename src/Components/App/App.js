@@ -13,7 +13,8 @@ import './App.css';
 //This component is the container for the rest of the app
 const App = (props) => {
     return (
-        <div className="app">
+        <div className="app"
+             id="Home">
             <Navbar className="app__navBar"/>
             <IntroBackground2 class="app__introBackground2" 
                               bgColor="#202030"
@@ -22,7 +23,8 @@ const App = (props) => {
             {/*This is the Card containing my name, location, social media accounts, and more*/}
             <IntroCard />
             {/*This starts the About Me section*/}
-            <div className="app__aboutMe">
+            <div className="app__aboutMe"
+                 id="About">
                 <Typography component="h2" 
                             variant="title"
                             className="app__aboutMe-title">
@@ -33,70 +35,88 @@ const App = (props) => {
                     <CardAboutMe iconColor="green"
                                 iconClassName="fa fa-users"
                                 title="Team Player"
-                                body="It is important to work as a team if you want to get anything done.  I like to get things done, so I work in a team.
-                                    Maybe one more sentence?  I'm not sure how much space I want to take up."
+                                body="I believe that I have a lot to contribute to a team environment, 
+                                      and am comfortable in both leadership and contributor roles. 
+                                      I'm outgoing, friendly, and have strong communication skills."
                                 />
                     <CardAboutMe iconColor="blue"
                                 iconClassName="fa fa-puzzle-piece"
-                                title="Problem Solver"
-                                body="It is important to work as a team if you want to get anything done.  I like to get things done, so I work in a team.
-                                    Maybe one more sentence?  I'm not sure how much space I want to take up."
+                                title="Critical Thinker"
+                                body="I believe that critical thinking is the most important skill a 
+                                      developer could have.  Strong critical thinking skills lead to 
+                                      cleaner, more maintainable code."
                                 />
                     <CardAboutMe iconColor="pink"
                                 iconClassName="fa fa-comments-o"
                                 title="Expert Communicator"
-                                body="It is important to work as a team if you want to get anything done.  I like to get things done, so I work in a team.
-                                    Maybe one more sentence?  I'm not sure how much space I want to take up."
+                                body="Any communication problems can lead to a drastic negative impact on
+                                      the project.  I pride myself on my ability to communicate issues and 
+                                      instructions to both experienced developers and non-technical staff alike."
                                 />  
                     <CardAboutMe iconColor="purple"
                                 iconClassName="fa fa-graduation-cap"
                                 title="Forever A Student"
-                                body="It is important to work as a team if you want to get anything done.  I like to get things done, so I work in a team.
-                                    Maybe one more sentence?  I'm not sure how much space I want to take up."
+                                body="As a developer, there is always something new to learn.  Thankfully,
+                                      I love to learn!  Not only do I love to learn, I love to teach
+                                      other people new things too."
                                 />
                 </div>
                 {/*These are the skill bars on the right side, showcasing hard skills*/}
                 <div className="app__aboutMe-skillbarContainer">
+                    <Typography component="h4"
+                                variant="subtitle"
+                                className="app__skillbar-title">
+                                    Proficient (Used Multiple Times A Week):
+                    </Typography>
                     <Skillbar color="pink"
-                              skillName="CSS3"
-                              skillValue="90"
+                              skillName="HTML5"
+                              skillValue="85"
                               />
                     <Skillbar color="pink"
-                              skillName="Javascript"
+                              skillName="CSS3"
                               skillValue="75"
                               />
                     <Skillbar color="pink"
-                              skillName="C#"
-                              skillValue="85"
-                              />
-                    <Skillbar color="pink"
-                              skillName="C++"
+                              skillName="React"
                               skillValue="70"
                               />
                     <Skillbar color="pink"
-                              skillName="Python"
-                              skillValue="85"
-                              />
-                    <Skillbar color="pink"
-                              skillName="Java"
+                              skillName="Javascript"
                               skillValue="65"
                               />
                     <Skillbar color="pink"
+                              skillName="git/Github"
+                              skillValue="65"
+                              />
+
+                    <Typography component="h4"
+                                variant="subtitle"
+                                className="app__skillbar-title"
+                                style={{marginTop: "30px",}}>
+                                    Experience With (Have Used In The Past):
+                    </Typography>
+                    <Skillbar color="blue"
+                              skillName="Python"
+                              skillValue="50"
+                              />
+                    <Skillbar color="blue"
+                              skillName="C#"
+                              skillValue="45"
+                              />
+                    <Skillbar color="blue"
                               skillName="PHP"
-                              skillValue="70"
+                              skillValue="25"
                               />
-                    <Skillbar color="pink"
-                              skillName="React"
-                              skillValue="90"
-                              />
-                    <Skillbar color="pink"
-                              skillName="Ruby"
-                              skillValue="15"
+                    <Skillbar color="blue"
+                              skillName="SQL"
+                              skillValue="25"
                               />
                 </div>
             </div>
             {/*This component consists of the My Experiences card and the My Education card*/}
-            <CardExperience/>
+            <div id="Experience">
+                <CardExperience/>
+            </div>
             {/*This container holds the cards that showcase what I offer*/}
             <div className="app__offer-container">
                 <Typography component="h2" 
@@ -108,80 +128,89 @@ const App = (props) => {
                     <CardOffer color1="green"
                                 color2="blue"
                                 icon="fa fa-wifi"
-                                title="Web Development"
-                                body="If you are looking at blank cassettes on the web, you may be very confused
-                                        at the difference in price.  You may see some for as low as $17 each."
+                                title="Front-End Web Development"
+                                body="I have experience creating full websites for small businesses, including
+                                      design, development, testing, and deployment."
                     />
                     <CardOffer color1="pink"
                                 color2="purple"
                                 icon="fa fa-gamepad"
                                 title="Video Game Programming"
-                                body="If you are looking at blank cassettes on the web, you may be very confused
-                                        at the difference in price.  You may see some for as low as $17 each."
+                                body="I have created both board games and video games as a part of the curriculum
+                                      at the University of Advancing Technology"
                     />
                     <CardOffer color1="yellow"
                                 color2="green"
                                 icon="fa fa-code"
                                 title="Software Engineering"
-                                body="If you are looking at blank cassettes on the web, you may be very confused
-                                        at the difference in price.  You may see some for as low as $17 each."
+                                body="I have experience using both C# and React Native to create software.  I do best
+                                      working in an Agile environment, preferably with the SCRUM framework."
                     />
                 </div>
             </div>
             {/*This is my latest projects section*/}
-            <div className="app__latestProjects-container">
+            <div className="app__latestProjects-container"
+                 id="Portfolio">
                 <Typography component="h2" 
                             variant="title"
                             className="app__latestProjects-title">
                                 My Latest Projects
                 </Typography>
                 <div className="app__latestProjects-cardContainer">
-                    <CardDemo image="./img/gallery/HappyTalesGallery.png"
-                              imageTitle="Happy Tales Landing Page"
+                    <CardDemo image="./img/gallery/HTModal1.png"
+                              imageTitle="Happy Tales Main Picture"
                               gradientColor1="purple"
                               gradientColor2="pink"
                               client="Happy Tales Pet Care"
-                              subtitle="Local business"
-                              description="Local Business"
-                              url="www.happytalespetcare.com"
-                              modalImages={[{image : "./img/gallery/HappyTalesDesign.png", title : "Image 1"}, 
-                                            {image : "/img/gallery/HappyTalesModal3.png", title : "Image 2"}]}
-                              aboutProject="This was a fun project"
-                              technologies={["Javascript", "HTML", "CSS3", "React", "Bootstrap"]}
+                              subtitle="Small Business"
+                              description="A small business specializing in pet care."
+                              url="http://www.happytalespetcare.com"
+                              modalImages={[{image : "./img/gallery/HTModal1.png", title : "Demo Image for Happy Tales Website"},
+                                            {image : "./img/gallery/HTModal2.jpg", title : "Demo Image for Happy Tales Website"}, 
+                                            {image : "./img/gallery/HTModal3.png", title : "Demo Image for Happy Tales Website"},
+                                            {image : "./img/gallery/HTModal4.jpg", title : "Demo Image for Happy Tales Website"}]}
+                              aboutProject="Happy Tales Pet Care provides numerous pet-related services to their local area. This
+                                            is a custom website written in HTML5 and Javascript, with Bootstrap as the framework."
+                              technologies={["Javascript", "HTML", "CSS3", "ScrollMagic", "Bootstrap", "GSAP", "git", "Github"]}
                               githubLink="https://github.com/grimsleynate/grimsleynate.github.io"
                     />
-                    <CardDemo image="./img/gallery/HappyTalesGallery.png"
-                              imageTitle="Happy Tales Landing Page"
-                              gradientColor1="purple"
-                              gradientColor2="pink"
-                              client="Happy Tales Pet Care"
-                              subtitle="Local business"
-                              description="Local Business"
-                              url="www.happytalespetcare.com"
-                              modalImages={[{image : "./img/gallery/HappyTalesDesign.png", title : "Image 1"}, 
-                                            {image : "/img/gallery/HappyTalesModal3.png", title : "Image 2"}]}
-                              aboutProject="This was a fun project"
-                              technologies={["Javascript", "HTML", "CSS3", "React", "Bootstrap"]}
-                              githubLink="https://github.com/grimsleynate/grimsleynate.github.io"
+                    <CardDemo image="./img/gallery/BDCMain.jpg"
+                              imageTitle="Bear Den Cottages Main Page"
+                              gradientColor1="green"
+                              gradientColor2="yellow"
+                              client="Bear Den Cottages"
+                              subtitle="Vacation Cabin Rentals"
+                              description="Vacation cabin rentals in Houghton Lake, Michigan"
+                              url="https://www.beardencottages.com"
+                              modalImages={[{image : "./img/gallery/BDCModal1.png", title : "Demo Image for Bear Den Cottages Website"},
+                                            {image : "./img/gallery/BDCModal2.png", title : "Demo Image for Bear Den Cottages Website"},
+                                            {image : "./img/gallery/BDCModal3.png", title : "Demo Image for Bear Den Cottages Website"}, 
+                                            {image : "./img/gallery/BDCModal4.png", title : "Demo Image for Bear Den Cottages Website"}]}
+                              aboutProject="Bear Den Cottages provides rental cabins in the Houghton Lake Area.  This website was built in Wordpress using PHP and Javascript."
+                              technologies={["Javascript", "PHP", "CSS3", "Wordpress"]}
+                              githubLink="https://www.beardencottages.com"
                     />
-                    <CardDemo image="./img/gallery/HappyTalesGallery.png"
-                              imageTitle="Happy Tales Landing Page"
-                              gradientColor1="purple"
-                              gradientColor2="pink"
-                              client="Happy Tales Pet Care"
-                              subtitle="Local business"
-                              description="Local Business"
-                              url="www.happytalespetcare.com"
-                              modalImages={[{image : "./img/gallery/HappyTalesDesign.png", title : "Image 1"}, 
-                                            {image : "/img/gallery/HappyTalesModal3.png", title : "Image 2"}]}
-                              aboutProject="This was a fun project"
-                              technologies={["Javascript", "HTML", "CSS3", "React", "Bootstrap"]}
-                              githubLink="https://github.com/grimsleynate/grimsleynate.github.io"
+                    <CardDemo image="./img/gallery/PModal1.png"
+                              imageTitle="Portfolio Main Page"
+                              gradientColor1="green"
+                              gradientColor2="blue"
+                              client="Nathaniel Grimsley"
+                              subtitle="Front-End Web Developer"
+                              description="A website created for a web developer."
+                              url="https://www.nathanielgrimsley.com"
+                              modalImages={[{image : "./img/gallery/PModal1.png", title : "Demo Image for Nathaniel Grimsley's Portfolio"},
+                                            {image : "./img/gallery/PModal2.png", title : "Demo Image for Nathaniel Grimsley's Portfolio"},
+                                            {image : "./img/gallery/PModal3.png", title : "Demo Image for Nathaniel Grimsley's Portfolio"}, 
+                                            {image : "./img/gallery/PModal4.png", title : "Demo Image for Nathaniel Grimsley's Portfolio"}]}
+                              aboutProject="This website is used to showcase projects created by Nathaniel Grimsley.  This is a custom website created using React and CSS3, with the Material-UI framework."
+                              technologies={["Javascript", "React", "CSS3", "HTML5", "Material-UI", "Anime.js", "git", "Github"]}
+                              githubLink="https://github.com/grimsleynate/Web-Development-Portfolio"
                     />
                 </div>
             </div>
             {/*This is my contact form*/}
-            <div className="app__contact-container">
+            <div className="app__contact-container"
+                 id="Contact">
                 {/*This is the title and the subtitle for the contact form*/}
                 <Typography variant="title" 
                             component="h3"
@@ -191,7 +220,7 @@ const App = (props) => {
                 <Typography variant="subtitle" 
                             component="h4"
                             className="app__contact-subtitle">
-                                If you have an questions, comments, or offers I would love to hear it!
+                                If you have an questions or comments, I would love to hear them!
                 </Typography>
                 {/*This holds all of the contact area, except for the title and subtitle */}
                 <div className="app__contact-masterContainer">

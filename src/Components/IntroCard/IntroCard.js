@@ -74,9 +74,9 @@ export const IntroCard = (props) => {
             <Box className="introCard__textContainer">
                 <Typography component="h4" variant="subtitle1"> Welcome to my portfolio, I am</Typography>
                 <Typography component="h1" varaint="h1"> Nathaniel Grimsley</Typography>
-                <Typography component="h3" variant="caption">Front-End Web Developer • Video Game Programmer • Software Engineer</Typography>
-                <Typography component="p" variant="body1" className="subParagraph">I believe in making this a two to three sentence general description.  
-                   We can go into detail later, keep this short and sweet. </Typography>
+                <Typography component="h3" variant="caption">Front-End Web Developer</Typography>
+                <Typography component="p" variant="body1" className="subParagraph">I am a front-end web developer with a focus on React.  I have experience working
+                                in an Agile environment using the SCRUM framework.</Typography>
                 <div className="contactInfo">
                     <IconTextList></IconTextList>
                     <IconList></IconList>       

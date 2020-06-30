@@ -24,6 +24,10 @@
     top: -300px;
 }
 
+.MuiCardMedia-root.carousel-img {
+    background-size: contain;
+}
+
 .cardDemo__root h4 {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -88,8 +92,13 @@
     top: -5px;
 }
 
+.viewWebsiteButton {
+    background-color: var(--blue) !important;
+    color: white !important;
+}
+
 .viewWebsiteButton:hover {
-    background-color: #873EE0 !important;
+    background-color: var(--purple) !important;
 }
 
 .githubButton {

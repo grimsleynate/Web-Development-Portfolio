@@ -102,11 +102,11 @@ const CardDemo = (props) => {
         //This class targets the text in the AppBar, inside the Dialog component
         modalTitle: {
             fontSize: '24px',
-            fontWeight: '500'
+            fontWeight: '500',
         },
         //This class targets the client name in the Dialog component
         modalClient: {
-            marginTop: '40px',
+            marginTop: '80px',
             fontSize: '48px',
             fontFamily: 'Raleway',
             textAlign: 'center',
@@ -115,11 +115,7 @@ const CardDemo = (props) => {
         modalDescription: {
             textAlign: 'center',
         },
-        //This class targets the button that says 'View Website'
-        viewWebsiteButton: {
-            backgroundColor: `${gradientColor1} !important`,
-            color: 'white !important',
-        },
+        
         //This class targets the Github button at the bottom of the Dialog component
         githubButton: {
             backgroundColor: 'black',
@@ -169,8 +165,9 @@ const CardDemo = (props) => {
                                     image={image}
                                     title={title}
                                     style={{
-                                        paddingTop: '75%',
+                                        paddingTop: '50%',
                                     }}
+                                    className="carousel-img"
                                     />
                                 </Card>
                             </CarouselSlide>
@@ -181,6 +178,7 @@ const CardDemo = (props) => {
                     <div className="postCarouselContainer">
                         <div className="websiteButton">
                             <Button variant="contained" 
+                                    data-secondcolor={`var(--${props.gradientColor2})`}
                                     className={`${classes.viewWebsiteButton} viewWebsiteButton`}
                                     endIcon={<Icon className="fas fa-bolt"></Icon>}>
                                 <a href={props.url}>Visit Website</a>

@@ -30,7 +30,7 @@ body {
 }
 
 .app__aboutMe {
-    margin-top: 100px;
+    padding-top: 100px;
 }
 
 .MuiTypography-root.app__aboutMe-title {
@@ -55,6 +55,11 @@ body {
     margin-left: 60%;
 }
 
+.MuiTypography-root.app__skillbar-title {
+    top: 15px;
+    position: relative;
+}
+
 .cardExperience__root,
 .app__offer-container {
     margin-top: 120px;
@@ -62,7 +67,7 @@ body {
 
 
 .app__latestProjects-container {
-    margin-top: 120px;
+    padding-top: 120px;
 }
 
 .MuiTypography-root.app__offer-title,

@@ -38,11 +38,11 @@ const Navbar = (props) => {
                     Nathaniel Grimsley
                 </Typography>
                 <ul className={`navbar__link-list ${className}`}>
-                    <li key="1"><Button color="inherit"><a href="#">Home</a></Button></li>
-                    <li key="2"><Button color="inherit"><a href="#">About</a></Button></li>
-                    <li key="3"><Button color="inherit"><a href="#">Services</a></Button></li>
-                    <li key="4"><Button color="inherit"><a href="#">Portfolio</a></Button></li>
-                    <li key="5"><Button color="inherit"><a href="#">Contact</a></Button></li>
+                    <li key="1"><Button color="inherit"><a href="#Home">Home</a></Button></li>
+                    <li key="2"><Button color="inherit"><a href="#About">About</a></Button></li>
+                    <li key="3"><Button color="inherit"><a href="#Experience">Experience</a></Button></li>
+                    <li key="4"><Button color="inherit"><a href="#Portfolio">Portfolio</a></Button></li>
+                    <li key="5"><Button color="inherit"><a href="#Contact">Contact</a></Button></li>
                 </ul>
                 <IconButton edge="start" className="menuButton" color="inherit" aria-label="menu" aria-controls="menu" aria-haspopup="true" onClick={handleClick}>
                     <Icon>menu</Icon>
