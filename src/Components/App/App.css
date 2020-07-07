@@ -260,6 +260,10 @@ body {
     margin-top: 30px;
 }
 
+.cardDemo__root {
+    margin-top: 20px;
+}
+
 @media only screen and (max-width: 1799px) {
     .app__aboutMe-skillbarContainer {
         margin-top: -975px;
