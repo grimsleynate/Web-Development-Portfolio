@@ -395,4 +395,12 @@ body {
     .iconList .MuiIconButton-root {
         padding: 0;
     }
+
+    .app__contact-iconTextContainer {
+        margin-left: 10px;
+    }
+
+    .app__contact-formContainer {
+        margin-left: 10px;
+    }
 }
