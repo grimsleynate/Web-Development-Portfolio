@@ -73,7 +73,7 @@ const IntroBackground2 = (props) => {
 
     return (
         <div className={props.class} style={{backgroundColor: props.bgColor,}}>
-            <Block color={props.color} />
+            
         </div>
     );
 }
