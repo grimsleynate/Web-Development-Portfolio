@@ -330,6 +330,10 @@ body {
     .MuiCard-root.cardOffer__root:nth-child(3) {
         margin-top: 20px;
     }
+
+    .app__contact-iconTextSubtitle {
+        font-size: 0.75rem;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
