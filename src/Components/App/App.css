@@ -292,3 +292,10 @@ body {
         max-width: 93%;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .iconList {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
