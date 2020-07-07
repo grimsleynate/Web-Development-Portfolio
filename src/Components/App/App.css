@@ -372,6 +372,33 @@ body {
     .MuiCard-root.cardOffer__root:nth-child(2) {
         margin-top: 20px;
     }
+
+    .app__footer-copyrightText {
+        font-size: 0.5em;
+        font-weight: 400;
+    }
+
+    .app__footer-container .MuiIconButton-root {
+        padding: 4px;
+    }
+
+    .MuiTypography-root.app__footer-contactSubtitle,
+    .MuiTypography-root.app__footer-socialSubtitle {
+        font-size: 0.75rem;
+        font-weight: 400;
+    }
+
+    .app__footer-contactTitle, .app__footer-socialTitle {
+        font-size: 1rem;
+    }
+
+    .app__footer-social {
+        margin-left: 20px;
+    }
+
+    .iconList .iconList__row1 {
+        margin-left: 0;
+    }
 }
 
 @media only screen and (max-width: 500px) {
