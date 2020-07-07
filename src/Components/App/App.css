@@ -256,6 +256,10 @@ body {
     font-weight: 200;
 }
 
+.app__skillbar-title2 {
+    margin-top: 30px;
+}
+
 @media only screen and (max-width: 1799px) {
     .app__aboutMe-skillbarContainer {
         margin-top: -975px;
@@ -290,6 +294,64 @@ body {
 
     .introCard__img {
         max-width: 93%;
+    }
+
+    .app__aboutMe-skillbarContainer {
+        display: flex;
+        margin-left: 10vw;
+        width: 100%;
+    }
+
+    .app__skillbar-list1,
+    .app__skillbar-list2 {
+        width: 350px;
+    }
+
+    .app__skillbar-list2 {
+        margin-left: 20vw;
+    }
+
+    .app__skillbar-title2 {
+        margin-top: 0;
+    }
+
+    .cardExperience__root, .app__offer-container {
+        margin-top: 420px;
+    }
+
+    .app__aboutMe-skillbarContainer {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .app__aboutMe-skillbarContainer {
+        margin-left: 5vw;
+    }
+
+    .app__skillbar-list2 {
+        margin-left: 15vw;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .app__aboutMe-skillbarContainer {
+        display: block;
+        margin-left: 0;
+    }
+
+    .app__skillbar-list1,
+    .app__skillbar-list2 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .app__skillbar-list2 {
+        margin-top: 20px;
+    }
+
+    .cardExperience__root, .app__offer-container {
+        margin-top: 660px;
     }
 }
 

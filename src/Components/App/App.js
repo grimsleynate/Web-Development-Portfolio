@@ -63,54 +63,57 @@ const App = (props) => {
                 </div>
                 {/*These are the skill bars on the right side, showcasing hard skills*/}
                 <div className="app__aboutMe-skillbarContainer">
-                    <Typography component="h4"
-                                variant="subtitle"
-                                className="app__skillbar-title">
-                                    Proficient (Used Multiple Times A Week):
-                    </Typography>
-                    <Skillbar color="pink"
-                              skillName="HTML5"
-                              skillValue="85"
-                              />
-                    <Skillbar color="pink"
-                              skillName="CSS3"
-                              skillValue="75"
-                              />
-                    <Skillbar color="pink"
-                              skillName="React"
-                              skillValue="70"
-                              />
-                    <Skillbar color="pink"
-                              skillName="Javascript"
-                              skillValue="65"
-                              />
-                    <Skillbar color="pink"
-                              skillName="git/Github"
-                              skillValue="65"
-                              />
-
-                    <Typography component="h4"
-                                variant="subtitle"
-                                className="app__skillbar-title"
-                                style={{marginTop: "30px",}}>
-                                    Experience With (Have Used In The Past):
-                    </Typography>
-                    <Skillbar color="blue"
-                              skillName="Python"
-                              skillValue="50"
-                              />
-                    <Skillbar color="blue"
-                              skillName="C#"
-                              skillValue="45"
-                              />
-                    <Skillbar color="blue"
-                              skillName="PHP"
-                              skillValue="25"
-                              />
-                    <Skillbar color="blue"
-                              skillName="SQL"
-                              skillValue="25"
-                              />
+                    <div className="app__skillbar-list1">
+                        <Typography component="h4"
+                                    variant="subtitle"
+                                    className="app__skillbar-title">
+                                        Proficient (Used Multiple Times A Week):
+                        </Typography>
+                        <Skillbar color="pink"
+                                skillName="HTML5"
+                                skillValue="85"
+                                />
+                        <Skillbar color="pink"
+                                skillName="CSS3"
+                                skillValue="75"
+                                />
+                        <Skillbar color="pink"
+                                skillName="React"
+                                skillValue="70"
+                                />
+                        <Skillbar color="pink"
+                                skillName="Javascript"
+                                skillValue="65"
+                                />
+                        <Skillbar color="pink"
+                                skillName="git/Github"
+                                skillValue="65"
+                                />
+                    </div>
+                    <div className="app__skillbar-list2">
+                        <Typography component="h4"
+                                    variant="subtitle"
+                                    className="app__skillbar-title app__skillbar-title2"
+                                    >
+                                        Experience With (Have Used In The Past):
+                        </Typography>
+                        <Skillbar color="blue"
+                                skillName="Python"
+                                skillValue="50"
+                                />
+                        <Skillbar color="blue"
+                                skillName="C#"
+                                skillValue="45"
+                                />
+                        <Skillbar color="blue"
+                                skillName="PHP"
+                                skillValue="25"
+                                />
+                        <Skillbar color="blue"
+                                skillName="SQL"
+                                skillValue="25"
+                                />
+                    </div>
                 </div>
             </div>
             {/*This component consists of the My Experiences card and the My Education card*/}
