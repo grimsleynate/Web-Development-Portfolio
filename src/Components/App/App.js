@@ -67,7 +67,7 @@ const App = (props) => {
                         <Typography component="h4"
                                     variant="subtitle"
                                     className="app__skillbar-title">
-                                        Proficient (Used Multiple Times A Week):
+                                        Proficient With:
                         </Typography>
                         <Skillbar color="pink"
                                 skillName="HTML5"
@@ -95,8 +95,12 @@ const App = (props) => {
                                     variant="subtitle"
                                     className="app__skillbar-title app__skillbar-title2"
                                     >
-                                        Experience With (Have Used In The Past):
+                                        Experience With:
                         </Typography>
+                        <Skillbar color="blue"
+                                skillName="Redux"
+                                skillValue="50"
+                                />
                         <Skillbar color="blue"
                                 skillName="Python"
                                 skillValue="50"
@@ -106,11 +110,11 @@ const App = (props) => {
                                 skillValue="45"
                                 />
                         <Skillbar color="blue"
-                                skillName="PHP"
-                                skillValue="25"
+                                skillName="SQL"
+                                skillValue="30"
                                 />
                         <Skillbar color="blue"
-                                skillName="SQL"
+                                skillName="PHP"
                                 skillValue="25"
                                 />
                     </div>
