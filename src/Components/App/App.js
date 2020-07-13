@@ -8,6 +8,8 @@ import CardExperience from '../CardExperience/CardExperience.js';
 import CardOffer from '../CardOffer/CardOffer.js';
 import CardDemo from '../CardDemo/CardDemo.js';
 import {Typography, Button, TextField, FormControl, Input} from '@material-ui/core';
+import {Controller, Scene} from 'react-scrollmagic';
+import {Timeline, Tween} from 'react-gsap';
 import './App.css';
 
 //This component is the container for the rest of the app
