@@ -50,7 +50,7 @@ const Skillbar = (props) => {
 
     return (
         <div className="skillbar__root">
-            <Typography component="h5">{`${props.skillName} ${props.skillValue}%`}</Typography>
+            <Typography component="h5">{`${props.skillName}`}</Typography>
             <MyLinearProgress variant="determinate" value={props.skillValue}/>
         </div>
     )
