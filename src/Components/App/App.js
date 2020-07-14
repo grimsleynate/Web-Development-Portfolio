@@ -7,24 +7,24 @@ import Skillbar from '../Skillbar/Skillbar.js';
 import CardExperience from '../CardExperience/CardExperience.js';
 import CardOffer from '../CardOffer/CardOffer.js';
 import CardDemo from '../CardDemo/CardDemo.js';
-import {Typography, Button, TextField, FormControl, Input} from '@material-ui/core';
+import {Typography, Button, TextField} from '@material-ui/core';
 import './App.css';
 
 //This component is the container for the rest of the app
 const App = (props) => {
-    return (
-        <div className="app"
-             id="Home">
+       return (
+        <div className="app" 
+            id="Home">
             <Navbar className="app__navBar"/>
             <IntroBackground2 class="app__introBackground2" 
-                              bgColor="#202030"
-                              color="blue"
-                              />
+                            bgColor="#202030"
+                            color="blue"
+                            />
             {/*This is the Card containing my name, location, social media accounts, and more*/}
             <IntroCard />
             {/*This starts the About Me section*/}
             <div className="app__aboutMe"
-                 id="About">
+                id="About">
                 <Typography component="h2" 
                             variant="title"
                             className="app__aboutMe-title">
@@ -36,29 +36,29 @@ const App = (props) => {
                                 iconClassName="fa fa-users"
                                 title="Team Player"
                                 body="I believe that I have a lot to contribute to a team environment, 
-                                      and am comfortable in both leadership and contributor roles. 
-                                      I'm outgoing, friendly, and have strong communication skills."
+                                    and am comfortable in both leadership and contributor roles. 
+                                    I'm outgoing, friendly, and have strong communication skills."
                                 />
                     <CardAboutMe iconColor="blue"
                                 iconClassName="fa fa-puzzle-piece"
                                 title="Critical Thinker"
                                 body="I believe that critical thinking is the most important skill a 
-                                      developer could have.  Strong critical thinking skills lead to 
-                                      cleaner, more maintainable code."
+                                    developer could have.  Strong critical thinking skills lead to 
+                                    cleaner, more maintainable code."
                                 />
                     <CardAboutMe iconColor="pink"
                                 iconClassName="fa fa-comments-o"
                                 title="Expert Communicator"
                                 body="Any communication problems can lead to a drastic negative impact on
-                                      the project.  I pride myself on my ability to communicate issues and 
-                                      instructions to both experienced developers and non-technical staff alike."
+                                    the project.  I pride myself on my ability to communicate issues and 
+                                    instructions to both experienced developers and non-technical staff alike."
                                 />  
                     <CardAboutMe iconColor="purple"
                                 iconClassName="fa fa-graduation-cap"
                                 title="Forever A Student"
                                 body="As a developer, there is always something new to learn.  Thankfully,
-                                      I love to learn!  Not only do I love to learn, I love to teach
-                                      other people new things too."
+                                    I love to learn!  Not only do I love to learn, I love to teach
+                                    other people new things too."
                                 />
                 </div>
                 {/*These are the skill bars on the right side, showcasing hard skills*/}
@@ -137,27 +137,27 @@ const App = (props) => {
                                 icon="fa fa-wifi"
                                 title="Front-End Web Development"
                                 body="I have experience creating full websites for small businesses, including
-                                      design, development, testing, and deployment."
+                                    design, development, testing, and deployment."
                     />
                     <CardOffer color1="pink"
                                 color2="purple"
                                 icon="fa fa-gamepad"
                                 title="Video Game Programming"
                                 body="I have created both board games and video games as a part of the curriculum
-                                      at the University of Advancing Technology"
+                                    at the University of Advancing Technology"
                     />
                     <CardOffer color1="yellow"
                                 color2="green"
                                 icon="fa fa-code"
                                 title="Software Engineering"
                                 body="I have experience using both C# and React Native to create software.  I do best
-                                      working in an Agile environment, preferably with the SCRUM framework."
+                                    working in an Agile environment, preferably with the SCRUM framework."
                     />
                 </div>
             </div>
             {/*This is my latest projects section*/}
             <div className="app__latestProjects-container"
-                 id="Portfolio">
+                id="Portfolio">
                 <Typography component="h2" 
                             variant="title"
                             className="app__latestProjects-title">
@@ -165,59 +165,59 @@ const App = (props) => {
                 </Typography>
                 <div className="app__latestProjects-cardContainer">
                     <CardDemo image="./img/gallery/HTModal1.png"
-                              imageTitle="Happy Tales Main Picture"
-                              gradientColor1="purple"
-                              gradientColor2="pink"
-                              client="Happy Tales Pet Care"
-                              subtitle="Small Business"
-                              description="A small business specializing in pet care."
-                              url="http://www.happytalespetcare.com"
-                              modalImages={[{image : "./img/gallery/HTModal1.png", title : "Demo Image for Happy Tales Website"},
+                            imageTitle="Happy Tales Main Picture"
+                            gradientColor1="purple"
+                            gradientColor2="pink"
+                            client="Happy Tales Pet Care"
+                            subtitle="Small Business"
+                            description="A small business specializing in pet care."
+                            url="http://www.happytalespetcare.com"
+                            modalImages={[{image : "./img/gallery/HTModal1.png", title : "Demo Image for Happy Tales Website"},
                                             {image : "./img/gallery/HTModal2.jpg", title : "Demo Image for Happy Tales Website"}, 
                                             {image : "./img/gallery/HTModal3.png", title : "Demo Image for Happy Tales Website"},
                                             {image : "./img/gallery/HTModal4.jpg", title : "Demo Image for Happy Tales Website"}]}
-                              aboutProject="Happy Tales Pet Care provides numerous pet-related services to their local area. This
+                            aboutProject="Happy Tales Pet Care provides numerous pet-related services to their local area. This
                                             is a custom website written in HTML5 and Javascript, with Bootstrap as the framework."
-                              technologies={["Javascript", "HTML", "CSS3", "ScrollMagic", "Bootstrap", "GSAP", "git", "Github"]}
-                              githubLink="https://github.com/grimsleynate/grimsleynate.github.io"
+                            technologies={["Javascript", "HTML", "CSS3", "ScrollMagic", "Bootstrap", "GSAP", "git", "Github"]}
+                            githubLink="https://github.com/grimsleynate/grimsleynate.github.io"
                     />
                     <CardDemo image="./img/gallery/BDCMain.jpg"
-                              imageTitle="Bear Den Cottages Main Page"
-                              gradientColor1="green"
-                              gradientColor2="yellow"
-                              client="Bear Den Cottages"
-                              subtitle="Vacation Cabin Rentals"
-                              description="Vacation cabin rentals in Houghton Lake, Michigan"
-                              url="https://www.beardencottages.com"
-                              modalImages={[{image : "./img/gallery/BDCModal1.png", title : "Demo Image for Bear Den Cottages Website"},
+                            imageTitle="Bear Den Cottages Main Page"
+                            gradientColor1="green"
+                            gradientColor2="yellow"
+                            client="Bear Den Cottages"
+                            subtitle="Vacation Cabin Rentals"
+                            description="Vacation cabin rentals in Houghton Lake, Michigan"
+                            url="https://www.beardencottages.com"
+                            modalImages={[{image : "./img/gallery/BDCModal1.png", title : "Demo Image for Bear Den Cottages Website"},
                                             {image : "./img/gallery/BDCModal2.png", title : "Demo Image for Bear Den Cottages Website"},
                                             {image : "./img/gallery/BDCModal3.png", title : "Demo Image for Bear Den Cottages Website"}, 
                                             {image : "./img/gallery/BDCModal4.png", title : "Demo Image for Bear Den Cottages Website"}]}
-                              aboutProject="Bear Den Cottages provides rental cabins in the Houghton Lake Area.  This website was built in Wordpress using PHP and Javascript."
-                              technologies={["Javascript", "PHP", "CSS3", "Wordpress"]}
-                              githubLink="https://www.beardencottages.com"
+                            aboutProject="Bear Den Cottages provides rental cabins in the Houghton Lake Area.  This website was built in Wordpress using PHP and Javascript."
+                            technologies={["Javascript", "PHP", "CSS3", "Wordpress"]}
+                            githubLink="https://www.beardencottages.com"
                     />
                     <CardDemo image="./img/gallery/PModal1.png"
-                              imageTitle="Portfolio Main Page"
-                              gradientColor1="green"
-                              gradientColor2="blue"
-                              client="Nathaniel Grimsley"
-                              subtitle="Front-End Web Developer"
-                              description="A website created for a web developer."
-                              url="https://www.nathanielgrimsley.com"
-                              modalImages={[{image : "./img/gallery/PModal1.png", title : "Demo Image for Nathaniel Grimsley's Portfolio"},
+                            imageTitle="Portfolio Main Page"
+                            gradientColor1="green"
+                            gradientColor2="blue"
+                            client="Nathaniel Grimsley"
+                            subtitle="Front-End Web Developer"
+                            description="A website created for a web developer."
+                            url="https://www.nathanielgrimsley.com"
+                            modalImages={[{image : "./img/gallery/PModal1.png", title : "Demo Image for Nathaniel Grimsley's Portfolio"},
                                             {image : "./img/gallery/PModal2.png", title : "Demo Image for Nathaniel Grimsley's Portfolio"},
                                             {image : "./img/gallery/PModal3.png", title : "Demo Image for Nathaniel Grimsley's Portfolio"}, 
                                             {image : "./img/gallery/PModal4.png", title : "Demo Image for Nathaniel Grimsley's Portfolio"}]}
-                              aboutProject="This website is used to showcase projects created by Nathaniel Grimsley.  This is a custom website created using React and CSS3, with the Material-UI framework."
-                              technologies={["Javascript", "React", "CSS3", "HTML5", "Material-UI", "Anime.js", "git", "Github"]}
-                              githubLink="https://github.com/grimsleynate/Web-Development-Portfolio"
+                            aboutProject="This website is used to showcase projects created by Nathaniel Grimsley.  This is a custom website created using React and CSS3, with the Material-UI framework."
+                            technologies={["Javascript", "React", "CSS3", "HTML5", "Material-UI", "Anime.js", "git", "Github"]}
+                            githubLink="https://github.com/grimsleynate/Web-Development-Portfolio"
                     />
                 </div>
             </div>
             {/*This is my contact form*/}
             <div className="app__contact-container"
-                 id="Contact">
+                id="Contact">
                 {/*This is the title and the subtitle for the contact form*/}
                 <Typography variant="title" 
                             component="h3"
@@ -234,7 +234,7 @@ const App = (props) => {
                     {/*This container holds all of the icon/text combos*/}
                     <div className="app__contact-iconTextContainer">
                         <IconText icon="room"
-                                  text="Lansing, Michigan"
+                                text="Lansing, Michigan"
                         />
                         <Typography component="p"
                                     variant="subtitle"
@@ -242,7 +242,7 @@ const App = (props) => {
                                         48906
                         </Typography>
                         <IconText icon="phone"
-                                  text="(989)217-6087"
+                                text="(989)217-6087"
                         />
                         <Typography component="p"
                                     variant="subtitle"
@@ -250,7 +250,7 @@ const App = (props) => {
                                         Mon thru Fri, 8:00 AM - 6:00 PM
                         </Typography>
                         <IconText icon="email"
-                                  text="grimsleynate@gmail.com"
+                                text="grimsleynate@gmail.com"
                         />
                         <Typography component="p"
                                     variant="subtitle"
@@ -292,13 +292,13 @@ const App = (props) => {
                                 {/*This container stores the Message input and the submit button*/}
                                 <div className="app__contact-formControl2">
                                     <TextField placeholder="Message Text" 
-                                               name="Message"
-                                               label="Message"
-                                               inputProps={{ 'aria-label': 'description' }}
-                                               multiline
-                                               rows={7}
-                                               variant="outlined"
-                                               className="app__contact-input"  
+                                            name="Message"
+                                            label="Message"
+                                            inputProps={{ 'aria-label': 'description' }}
+                                            multiline
+                                            rows={7}
+                                            variant="outlined"
+                                            className="app__contact-input"  
                                     />
                                     <Button type="submit"
                                             variant="contained"

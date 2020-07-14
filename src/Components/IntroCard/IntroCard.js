@@ -69,13 +69,16 @@ PROPS LIST:
 export const IntroCard = (props) => {
     return (
         //this is used for scrollMagic to be able to target the top of this component.
-                        <Timeline>
+                        <Timeline
+                            duration={2}>
                             <Tween 
-                                from={{opacity: 0,
-                                       left: -100,
-                                       }}
+                                from={{
+                                    opacity: 0,
+                                    transform: "translateX(-250px)"
+                                }}
                                 ease="power2.out"
-                                duration={0.8}
+                                duration={0.6}
+                                delay={0}
                             >
                                 <Card className="introCard">
                                     <Box>
@@ -85,8 +88,10 @@ export const IntroCard = (props) => {
                                         <Typography component="h4" variant="subtitle1"> Welcome to my portfolio, I am</Typography>
                                         <Typography component="h1" varaint="h1"> Nathaniel Grimsley</Typography>
                                         <Typography component="h3" variant="caption">Front-End Web Developer</Typography>
-                                        <Typography component="p" variant="body1" className="subParagraph">I am a front-end web developer with a focus on React.  I have experience working
-                                                        in an Agile environment using the SCRUM framework.</Typography>
+                                        <Typography component="p" variant="body1" className="subParagraph">
+                                            I am a front-end web developer with a focus on React.  I have experience working
+                                            in an Agile environment using the SCRUM framework.
+                                        </Typography>
                                         <div className="contactInfo">
                                             <IconTextList></IconTextList>
                                             <IconList></IconList>       
