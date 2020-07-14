@@ -2,6 +2,7 @@ import React from 'react';
 import {Card, CardMedia, Box, Typography, Icon, IconButton} from '@material-ui/core/';
 import {Facebook, Twitter, LinkedIn, GitHub} from '@material-ui/icons/';
 import './IntroCard.css';
+import {Tween, Timeline} from 'react-gsap';
 
 //a component that holds an icon and some text in a row
 /*
@@ -67,21 +68,32 @@ PROPS LIST:
 */
 export const IntroCard = (props) => {
     return (
-        <Card className="introCard">
-            <Box>
-                <CardMedia className="introCard__img" component="span" image="img/personal.jpg"></CardMedia>
-            </Box>
-            <Box className="introCard__textContainer">
-                <Typography component="h4" variant="subtitle1"> Welcome to my portfolio, I am</Typography>
-                <Typography component="h1" varaint="h1"> Nathaniel Grimsley</Typography>
-                <Typography component="h3" variant="caption">Front-End Web Developer</Typography>
-                <Typography component="p" variant="body1" className="subParagraph">I am a front-end web developer with a focus on React.  I have experience working
-                                in an Agile environment using the SCRUM framework.</Typography>
-                <div className="contactInfo">
-                    <IconTextList></IconTextList>
-                    <IconList></IconList>       
-                </div>
-            </Box>
-        </Card>
+        //this is used for scrollMagic to be able to target the top of this component.
+                        <Timeline>
+                            <Tween 
+                                from={{opacity: 0,
+                                       left: -100,
+                                       }}
+                                ease="power2.out"
+                                duration={0.8}
+                            >
+                                <Card className="introCard">
+                                    <Box>
+                                        <CardMedia className="introCard__img" component="span" image="img/personal.jpg"></CardMedia>
+                                    </Box>
+                                    <Box className="introCard__textContainer">
+                                        <Typography component="h4" variant="subtitle1"> Welcome to my portfolio, I am</Typography>
+                                        <Typography component="h1" varaint="h1"> Nathaniel Grimsley</Typography>
+                                        <Typography component="h3" variant="caption">Front-End Web Developer</Typography>
+                                        <Typography component="p" variant="body1" className="subParagraph">I am a front-end web developer with a focus on React.  I have experience working
+                                                        in an Agile environment using the SCRUM framework.</Typography>
+                                        <div className="contactInfo">
+                                            <IconTextList></IconTextList>
+                                            <IconList></IconList>       
+                                        </div>
+                                    </Box>
+                                </Card>
+                            </Tween>
+                        </Timeline>
     );
 }

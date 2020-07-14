@@ -8,8 +8,6 @@ import CardExperience from '../CardExperience/CardExperience.js';
 import CardOffer from '../CardOffer/CardOffer.js';
 import CardDemo from '../CardDemo/CardDemo.js';
 import {Typography, Button, TextField, FormControl, Input} from '@material-ui/core';
-import {Controller, Scene} from 'react-scrollmagic';
-import {Timeline, Tween} from 'react-gsap';
 import './App.css';
 
 //This component is the container for the rest of the app
@@ -351,7 +349,7 @@ const App = (props) => {
                     <div className="copyright-container">
                     <Typography className="app__footer-copyrightText"
                                 component="p"
-                                variant="body">
+                                variant="body1">
                                     Copyright © 2020 All rights reserved | <a href="www.github.com/grimsleynate">Nathaniel Grimsley</a>
                     </Typography>
                     </div>
