@@ -8,6 +8,8 @@ import CardExperience from '../CardExperience/CardExperience.js';
 import CardOffer from '../CardOffer/CardOffer.js';
 import CardDemo from '../CardDemo/CardDemo.js';
 import {Typography, Button, TextField} from '@material-ui/core';
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.min.css";
 import './App.css';
 
 //This component is the container for the rest of the app
