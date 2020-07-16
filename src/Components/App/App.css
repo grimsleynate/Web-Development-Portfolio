@@ -1,0 +1,452 @@
+:root {
+    --purple: #9B5DE5;
+    --pink: #F15BB5;
+    --yellow:  #FEE440;
+    --blue: #00BBF9;
+    --green: #00F5D4;
+}
+
+body {
+    background-color: #EEE;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.shown {
+    opacity: 1;
+}
+
+.aboutMe__container {
+    max-width: 50%;
+}
+
+.aboutMe__row1,
+.aboutMe__row2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.app__introBackground2 {
+    height: 90vh;
+}
+
+.introCard {
+    margin-top: -75vh;
+    position: relative;
+}
+
+.app__aboutMe {
+    padding-top: 100px;
+}
+
+.MuiTypography-root.app__aboutMe-title {
+    font-size: 42px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    margin-left: 21vw;
+    text-transform: uppercase;
+}
+
+.app__aboutMe-cardContainer {
+    display: inline-flex;
+    width: 50%;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+
+.app__aboutMe-skillbarContainer {
+    width: 40%;
+    position: absolute;
+    margin-top: -480px;
+    margin-left: 60%;
+}
+
+.MuiTypography-root.app__skillbar-title {
+    top: 15px;
+    position: relative;
+}
+
+.cardExperience__root,
+.app__offer-container {
+    margin-top: 120px;
+}
+
+
+.app__latestProjects-container {
+    padding-top: 120px;
+}
+
+.MuiTypography-root.app__offer-title,
+.MuiTypography-root.app__latestProjects-title,
+.MuiTypography-root.app__contact-title {
+    font-size: 42px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.MuiTypography-root.app__contact-subtitle {
+    font-size: 21px;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.app__offer-cardContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.app__latestProjects-cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.app__contact-container {
+    margin-top: 120px;
+}
+
+.app__contact-container .MuiButton-root {
+    background-color: var(--purple);
+    color: white;
+}
+
+.app__contact-container .MuiButton-root:hover,
+.app__contact-container .MuiButton-root:focus {
+    background-color: var(--blue);
+}
+
+.app__contact-masterContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.app__contact-iconTextContainer {
+    flex-grow: 1;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.app__contact-formContainer {
+    flex-grow: 4;
+}
+
+.app__contact-container .iconText span {
+    color: var(--purple);
+}
+
+.app__contact-iconTextSubtitle {
+    color: #888;
+    font-weight: 300;
+    top: -15px;
+    left: 40px;
+    position: relative;
+}
+
+.app__contact-formControl {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.app__contact-formControl1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 450px;
+}
+
+.app__contact-formControl2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-grow: 2;
+    margin-left: 20px;
+    max-width: 500px;
+}
+
+.app__contact-button {
+    max-width: 150px;
+}
+
+.app__contact-input {
+    margin-bottom: 10px !important;
+}
+
+.app__footer-container {
+    background-color: #202030;
+    color: white;
+    display: flex;
+    margin-top: 60px;
+}
+
+.app__footer-contact {
+    margin-left: 20px;
+    max-width: 30%;
+}
+
+.app__footer-contact,
+.app__footer-social {
+    margin-top: 20px;
+}
+
+.app__footer-contactTitle,
+.app__footer-socialTitle {
+    font-size: 24px;
+}
+
+.app__footer-contactSubtitle,
+.app__footer-socialSubtitle {
+    top: 10px;
+    position: relative;
+    font-weight: 300;
+}
+
+.app__contact-socialMediaButtons .MuiSvgIcon-root {
+    width: 15px;
+    height: 15px;
+}
+
+.app__contact-socialMediaButtons .MuiIcon-fontSizeLarge {
+    font-size: 16px;
+}
+
+.app__contact-socialMediaButtons .iconList {
+    display: flex;
+}
+
+.app__contact-socialMediaButtons .iconList .iconList__row2 {
+    margin-left: 0;
+}
+
+.app__contact-socialMediaButtons .iconList ul li{
+    margin-right: 0;
+}
+
+.app__contact-socialMediaButtons .MuiIconButton-root.github {
+    color: #FFF;
+}
+
+.app__footer-container a {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.app__footer-container a:hover,
+.app__footer-container a:focus {
+    text-decoration: none;
+    color: var(--pink);
+}
+
+.app__footer-copyright {
+    width: 100%;
+}
+
+.copyright-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.app__footer-copyrightText {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-weight: 200;
+}
+
+.app__skillbar-title2 {
+    margin-top: 30px;
+}
+
+.cardDemo__root {
+    margin-top: 20px;
+}
+
+.load-icon {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    top: 50vh;
+    left: 50vw;
+}
+
+@media only screen and (max-width: 1799px) {
+    .app__aboutMe-skillbarContainer {
+        margin-top: -975px;
+    }
+}
+
+@media only screen and (max-width: 1599px) {
+    .app__aboutMe-skillbarContainer {
+        margin-left: 50%;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .app__aboutMe-cardContainer {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .app__aboutMe-skillbarContainer {
+        margin-left: 25%;
+        margin-top: 20px;
+    }
+
+    .MuiTypography-root.app__aboutMe-title {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .introCard {
+        max-width: 1000px;
+    }
+
+    .introCard__img {
+        max-width: 93%;
+    }
+
+    .app__aboutMe-skillbarContainer {
+        display: flex;
+        margin-left: 10vw;
+        width: 100%;
+    }
+
+    .app__skillbar-list1,
+    .app__skillbar-list2 {
+        width: 350px;
+    }
+
+    .app__skillbar-list2 {
+        margin-left: 20vw;
+    }
+
+    .app__skillbar-title2 {
+        margin-top: 0;
+    }
+
+    .cardExperience__root {
+        margin-top: 420px;
+    }
+
+    .app__aboutMe-skillbarContainer {
+        margin-top: 50px;
+    }
+
+    .MuiCard-root.cardOffer__root:nth-child(3) {
+        margin-top: 20px;
+    }
+
+    .app__contact-iconTextSubtitle {
+        font-size: 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .app__aboutMe-skillbarContainer {
+        margin-left: 5vw;
+    }
+
+    .app__skillbar-list2 {
+        margin-left: 15vw;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .app__aboutMe-skillbarContainer {
+        display: block;
+        margin-left: 0;
+    }
+
+    .app__skillbar-list1,
+    .app__skillbar-list2 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .app__skillbar-list2 {
+        margin-top: 20px;
+    }
+
+    .cardExperience__root {
+        margin-top: 660px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .iconList {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .MuiCard-root.cardOffer__root:nth-child(2) {
+        margin-top: 20px;
+    }
+
+    .app__footer-copyrightText {
+        font-size: 0.5em;
+        font-weight: 400;
+    }
+
+    .app__footer-container .MuiIconButton-root {
+        padding: 4px;
+    }
+
+    .MuiTypography-root.app__footer-contactSubtitle,
+    .MuiTypography-root.app__footer-socialSubtitle {
+        font-size: 0.75rem;
+        font-weight: 400;
+    }
+
+    .app__footer-contactTitle, .app__footer-socialTitle {
+        font-size: 1rem;
+    }
+
+    .app__footer-social {
+        margin-left: 20px;
+    }
+
+    .iconList .iconList__row1 {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .introCard__textContainer h1 {
+        font-size: 1.75rem;
+    }
+
+    .introCard__textContainer .MuiTypography-caption {
+        font-weight: 400;
+    }
+
+    .iconTextList {
+        font-size: 0.75rem;
+        margin-bottom: 0;
+    }
+
+    .iconText {
+        margin-bottom: 8px;
+    }
+
+    .iconList .MuiIconButton-root {
+        padding: 0;
+    }
+
+    .app__contact-iconTextContainer {
+        margin-left: 10px;
+    }
+
+    .app__contact-formContainer {
+        margin-left: 10px;
+    }
+}

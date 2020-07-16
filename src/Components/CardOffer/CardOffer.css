@@ -1,0 +1,35 @@
+/*This targets the Card root*/
+.MuiCard-root.cardOffer__root {
+    height: 360px;
+    width: 360px;
+    background: white;
+    text-align: center;
+    margin: 0 20px;
+}
+
+/*This targets the content container on the Card*/
+.MuiCardContent-root.cardOffer__cardContent {
+    position: relative;
+    top: -80px;
+}
+
+/*This targets the card title*/
+.cardOffer__root h2.MuiTypography-root {
+    font-size: 1.75rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+/*This targets the card body text */
+.cardOffer__root p.MuiTypography-root {
+    margin-top: 30px;
+    color: #888;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+.MuiIcon-root {
+    width: 1.3em !important;
+}

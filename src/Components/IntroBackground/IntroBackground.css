@@ -1,0 +1,250 @@
+.intro__background {
+    height: 80vh;
+    background-color: #282c34;
+}
+
+.dot {
+    width: CALC(98vw/40);
+    height: CALC(80vh/18);
+    background: #15EC8F;
+    position: absolute;
+}
+
+.col1 {
+    background: #00d3fe;
+}
+
+.col2 {
+    background: #01d4fb;
+}
+
+.col3 {
+    background: #01d5f8;
+}
+
+.col4 {
+    background: #02d5f5;
+}
+
+.col5 {
+    background: #02d6f2
+}
+
+.col6 {
+    background: #03D6EF;
+}
+
+.col7 {
+    background: #03D7EC;
+}
+
+.col8 {
+    background: #04D8E9;
+}
+
+.col9 {
+    background: #05D8E6;
+}
+
+.col10 {
+    background: #05D9E3;
+}
+
+.col11 {
+    background: #06DAE0;
+}
+
+.col12 {
+    background: #06DADE;
+}
+
+.col13 {
+    background: #07DBDB;
+}
+
+.col14 {
+    background: #07dcd8;
+}
+
+.col15 {
+    background: #08dcd5;
+}
+
+.col16 {
+    background: #08ddd2;
+}
+
+.col17 {
+    background: #09decf;
+}
+
+.col18 {
+    background: #0adecc;
+}
+
+.col19 {
+    background: #0adfc9;
+}
+
+.col20 {
+    background: #0be0c6;
+}
+
+.col21 {
+    background: #0be0c3;
+}
+
+.col22 {
+    background: #0ce1c0;
+}
+
+.col23 {
+    background: #0ce2bd;
+}
+
+.col24 {
+    background: #0de2ba;
+}
+
+.col25 {
+    background: #0de3b8;
+}
+
+.col26 {
+    background: #0ee4b5;
+}
+
+.col27 {
+    background: #0ee4b2;
+}
+
+.col28 {
+    background: #0fe5af;
+}
+
+.col29 {
+    background: #10e6ac;
+}
+
+.col30 {
+    background: #10e6a9;
+}
+
+.col31 {
+    background: #11e7a6;
+}
+
+.col32 {
+    background: #11e8a3;
+}
+
+.col33 {
+    background: #12e8a0;
+}
+
+.col34 {
+    background: #12e99d;
+}
+
+.col35 {
+    background: #13e99b;
+}
+
+.col36 {
+    background: #13ea97;
+}
+
+.col37 {
+    background: #14eb95;
+}
+
+.col38 {
+    background: #14eb92;
+}
+
+@media only screen and (max-width: 1024px) {
+    .dot {
+        width: CALC(98vw/25);
+        height: CALC(80vh/18);
+    }
+
+    .col1 {
+        background: #00d3fe;
+    }
+    
+    .col2 {
+        background: #01d5f8;
+    }
+    
+    .col3 {
+        background: #02d6f2;
+    }
+    
+    .col4 {
+        background: #03D7EC;
+    }
+    
+    .col5 {
+        background: #05D8E6;
+    }
+    
+    .col6 {
+        background: #06DAE0;
+    }
+    
+    .col7 {
+        background: #07DBDB;
+    }
+    
+    .col8 {
+        background: #08dcd5;
+    }
+    
+    .col9 {
+        background: #09decf;
+    }
+    
+    .col10 {
+        background: #0adfc9;
+    }
+    
+    .col11 {
+        background: #0be0c3;
+    }
+    
+    .col12 {
+        background: #0ce2bd;
+    }
+    
+    .col13 {
+        background: #0de3b8;
+    }
+    
+    .col14 {
+        background: #0ee4b2;
+    }
+    
+    .col15 {
+        background: #10e6ac;
+    }
+    
+    .col16 {
+        background: #11e7a6;
+    }
+    
+    .col17 {
+        background: #12e8a0;
+    }
+    
+    .col18 {
+        background: #13e99b;
+    }
+    
+    .col19 {
+        background: #14eb95;
+    }
+    
+    .col20 {
+        background: #14eb92;
+    }
+}

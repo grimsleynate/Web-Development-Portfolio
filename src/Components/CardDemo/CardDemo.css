@@ -1,0 +1,185 @@
+.cardDemo__root {
+    width: 600px;
+    height: 400px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.cardDemo__root .image {
+    width: auto;
+    height: 300px;
+}
+
+.cardDemo__root .image:hover {
+    background-image: linear-gradient(0.25turn, var(--purple), var(--yellow));
+}
+
+.cardDemo__root h2 {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    position: relative;
+    top: -300px;
+}
+
+.MuiCardMedia-root.carousel-img {
+    background-size: contain;
+}
+
+.cardDemo__root h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    position: relative;
+    top: -300px;
+}
+
+.cardDemo__cardMedia-container .overlay { 
+    width: 600px; 
+    height: 300px;
+    position: relative;
+    top: -300px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.cardDemo__cardMedia-container .overlay:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.cardDemo__cardMedia-container .overlay-icon{
+    color: white;
+    font-size: 60px;
+    margin-top: 120px;
+}
+
+.MuiDialog-root .MuiPaper-root {
+    background-color: #202030;
+    color: white;
+}
+
+.Carousel-carousel-179 {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px !important;
+}
+
+.websiteButton {
+    position: relative;
+    transition: all 0.5s;
+    top: 0px;
+}
+
+.websiteButton a {
+    text-decoration: none;
+    color: white;
+}
+
+.websiteButton:focus,
+.websiteButton:visited,
+.websiteButton:active
+.websiteButton a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.websiteButton:hover {
+    top: -5px;
+}
+
+.viewWebsiteButton {
+    background-color: var(--blue) !important;
+    color: white !important;
+}
+
+.viewWebsiteButton:hover {
+    background-color: var(--purple) !important;
+}
+
+.githubButton {
+    position: relative;
+    top: 0px;
+    transition: all 0.5s;
+    margin-bottom: 20px;
+}
+
+.githubButton a {
+    text-decoration: none;
+    color: white;
+}
+
+.viewGithubButton:hover {
+    background-color: black !important;
+}
+.githubButton:hover {
+    top: -5px;
+}
+
+.postCarouselContainer {
+    width: 700px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.Carousel-dots-181 {
+    display: none;
+}
+
+.postCarouselContainer .MuiDivider-root {
+    background-color: rgba(124, 124, 124, 0.5);
+}
+
+.MuiTypography-root.aboutProject-title,
+.MuiTypography-root.techSheet-title {
+    font-size: 36px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.MuiTypography-root.techSheet-title {
+    margin-top: 120px;
+}
+
+.MuiTypography-root.techSheet-subtitle {
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.MuiTypography-root.aboutProject-body {
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.technologies-list {
+    list-style-type: circle;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 1024px) {
+    .postCarouselContainer {
+        max-width: 70%;
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .websiteButton .MuiButton-root {
+        font-size: 12px;
+    }
+
+    .websiteButton .MuiIcon-root {
+        width: 12px;
+        height: 12px;
+        font-size: 12px !important;
+    }
+}
