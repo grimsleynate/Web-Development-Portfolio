@@ -2,7 +2,6 @@ import React from 'react';
 import {Card, CardMedia, Box, Typography, Icon, IconButton} from '@material-ui/core/';
 import {Facebook, Twitter, LinkedIn, GitHub} from '@material-ui/icons/';
 import './IntroCard.css';
-import {Tween, Timeline} from 'react-gsap';
 
 //a component that holds an icon and some text in a row
 /*
@@ -23,7 +22,7 @@ export const IconText = (props) => {
 const IconTextList = (props) => {
     return (
         <div className="iconTextList">
-            <IconText icon="phone" text="1(989)217-6087"></IconText>
+            <IconText icon="phone" text="1(989)387-7125"></IconText>
             <IconText icon="email" text="grimsleynate@gmail.com"></IconText>
             <IconText icon="room" text="West Branch, Michigan"></IconText> 
         </div>
@@ -75,7 +74,7 @@ export const IntroCard = (props) => {
             <Box className="introCard__textContainer">
                 <Typography component="h4" variant="subtitle1"> Welcome to my portfolio, I am</Typography>
                 <Typography component="h1" varaint="h1"> Nathaniel Grimsley</Typography>
-                <Typography component="h3" variant="caption">Front-End Web Developer</Typography>
+                <Typography component="h3" variant="caption">Front-End Developer</Typography>
                 <Typography component="p" variant="body1" className="subParagraph">
                     I am a front-end web developer with a focus on React.  I have experience working
                     in an Agile environment using the SCRUM framework.

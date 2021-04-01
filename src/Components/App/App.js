@@ -137,16 +137,9 @@ const App = (props) => {
                     <CardOffer color1="green"
                                 color2="blue"
                                 icon="fa fa-wifi"
-                                title="Front-End Web Development"
+                                title="Web Development"
                                 body="I have experience creating full websites for small businesses, including
                                     design, development, testing, and deployment."
-                    />
-                    <CardOffer color1="pink"
-                                color2="purple"
-                                icon="fa fa-gamepad"
-                                title="Video Game Programming"
-                                body="I have created both board games and video games as a part of the curriculum
-                                    at the University of Advancing Technology"
                     />
                     <CardOffer color1="yellow"
                                 color2="green"
@@ -244,7 +237,7 @@ const App = (props) => {
                                         48906
                         </Typography>
                         <IconText icon="phone"
-                                text="(989)217-6087"
+                                text="(989)387-7125"
                         />
                         <Typography component="p"
                                     variant="subtitle"
@@ -263,7 +256,7 @@ const App = (props) => {
                     {/*This container holds our actual form*/}
                     <div className="app__contact-formContainer">
                         {/*I'm using formspree to handle my form instead of building out a form handler myself*/}
-                        <form action="https://formspree.io/mdowlnja" method="POST">
+                        <form action="https://formspree.io/f/xoqyqqew" method="POST">
                             {/*I divied my form up into seperate containers so that I can easily use flexbox to
                                 move and position the different elements*/}
                             <div className="app__contact-formControl">
@@ -327,7 +320,7 @@ const App = (props) => {
                                 variant="subtitle">
                                     Like what you see? You can contact me through email
                                     at grimsleynate@gmail.com or through phone at 
-                                    1(989)217-6087
+                                    1(989)387-7125
                     </Typography>
                 </div>
                 {/*This container holds the social media portion of the footer */}
@@ -352,7 +345,7 @@ const App = (props) => {
                     <Typography className="app__footer-copyrightText"
                                 component="p"
                                 variant="body1">
-                                    Copyright © 2020 All rights reserved | <a href="www.github.com/grimsleynate">Nathaniel Grimsley</a>
+                                    Copyright © 2021 All rights reserved | <a href="www.github.com/grimsleynate">Nathaniel Grimsley</a>
                     </Typography>
                     </div>
                 </div>

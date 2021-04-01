@@ -23,10 +23,10 @@ const ExpContent = (props) => {
                                 <span className="span2"></span>
                             </div>
                             <div>
-                                <Typography className="expCard__listItem-title" component="h4">Upwork</Typography>
-                                <Typography className="expCard__listItem-date" component="p">March 2018 to Present</Typography>
-                                <Typography className="expCard__listItem-jobTitle" component="p">Front End Web Developer</Typography>
-                                <Typography className="expCard__listItem-location" component="p">West Branch, Michigan</Typography>
+                                <Typography className="expCard__listItem-title" component="h4">GRA Benefits</Typography>
+                                <Typography className="expCard__listItem-date" component="p">August 2020 to Present</Typography>
+                                <Typography className="expCard__listItem-jobTitle" component="p">Front-End Developer</Typography>
+                                <Typography className="expCard__listItem-location" component="p">Lansing, Michigan</Typography>
                             </div>
                         </li>
                         <li className="expCard__listItem">
@@ -74,17 +74,15 @@ const EduContent = (props) => {
                     {/*These are the list items.  each item contains:
                             College Name, Dates Attended, Major, and College Location*/}
                         <li className="eduCard__listItem">
-                            {/*This is the circle with a background you see on the list's seperating line*/}
                             <div className="circleDivider">
                                 <span className="span1"></span>
                                 <span className="span2"></span>
                             </div>
                             <div>
-                                <Typography className="eduCard__listItem-title" component="h4">Alpena Community</Typography>
-                                <Typography className="eduCard__listItem-title" component="h4">College</Typography>
-                                <Typography className="eduCard__listItem-date" component="p">Sept 2007 - July 2009</Typography>
-                                <Typography className="eduCard__listItem-jobTitle" component="p">General Studies</Typography>
-                                <Typography className="eduCard__listItem-location" component="p">Alpena, Michigan</Typography>
+                                <Typography className="eduCard__listItem-title" component="h4">University of Advancing Technology</Typography>
+                                <Typography className="eduCard__listItem-date" component="p">Sept 2017 - October 2019</Typography>
+                                <Typography className="eduCard__listItem-jobTitle" component="p">Video Game Programming</Typography>
+                                <Typography className="eduCard__listItem-location" component="p">Tempe, Arizona</Typography>
                             </div>
                         </li>
                         <li className="eduCard__listItem">
@@ -101,15 +99,17 @@ const EduContent = (props) => {
                             </div>
                         </li>
                         <li className="eduCard__listItem">
+                            {/*This is the circle with a background you see on the list's seperating line*/}
                             <div className="circleDivider">
                                 <span className="span1"></span>
                                 <span className="span2"></span>
                             </div>
                             <div>
-                                <Typography className="eduCard__listItem-title" component="h4">University of Advancing Technology</Typography>
-                                <Typography className="eduCard__listItem-date" component="p">Sept 2017 - October 2019</Typography>
-                                <Typography className="eduCard__listItem-jobTitle" component="p">Video Game Programming</Typography>
-                                <Typography className="eduCard__listItem-location" component="p">Tempe, Arizona</Typography>
+                                <Typography className="eduCard__listItem-title" component="h4">Alpena Community</Typography>
+                                <Typography className="eduCard__listItem-title" component="h4">College</Typography>
+                                <Typography className="eduCard__listItem-date" component="p">Sept 2007 - July 2009</Typography>
+                                <Typography className="eduCard__listItem-jobTitle" component="p">General Studies</Typography>
+                                <Typography className="eduCard__listItem-location" component="p">Alpena, Michigan</Typography>
                             </div>
                         </li>
                     </ul>
