@@ -21,7 +21,7 @@
     "react-anime": "^3.0.3",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
-    "set-value": "^3.0.2",
+    "set-value": "^4.0.1",
     "typeface-heebo": "0.0.72",
     "typeface-raleway": "0.0.75",
     "typeface-roboto": "0.0.75",
